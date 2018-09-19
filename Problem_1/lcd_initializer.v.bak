@@ -1,0 +1,19 @@
+// we don't need data because there are no outputs coming from LCD to processor
+// maybe we can use result to say that LCD was properly initialized
+
+module init_LCD(
+	clk,
+	clk_en,
+	reset,
+	done,
+	result
+);
+	
+	input clk;
+	input clk_en;
+	input reset;
+	output done;
+	output [31:0] result;
+	
+	result = 0x10;
+endmodule

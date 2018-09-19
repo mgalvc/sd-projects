@@ -1,0 +1,39 @@
+|lcd_initializer
+clk => ~NO_FANOUT~
+clk_en => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+done <= <GND>
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
+result[6] <= <GND>
+result[7] <= <GND>
+result[8] <= <VCC>
+result[9] <= <VCC>
+result[10] <= <VCC>
+result[11] <= <GND>
+result[12] <= <GND>
+result[13] <= <VCC>
+result[14] <= <GND>
+result[15] <= <GND>
+result[16] <= <GND>
+result[17] <= <GND>
+result[18] <= <GND>
+result[19] <= <GND>
+result[20] <= <GND>
+result[21] <= <GND>
+result[22] <= <GND>
+result[23] <= <GND>
+result[24] <= <GND>
+result[25] <= <GND>
+result[26] <= <GND>
+result[27] <= <GND>
+result[28] <= <GND>
+result[29] <= <GND>
+result[30] <= <GND>
+result[31] <= <GND>
+
+
