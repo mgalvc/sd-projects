@@ -1,0 +1,30 @@
+# system info nios on 2018.10.05.16:32:08
+system_info:
+name,value
+DEVICE,EP4CE6E22C8
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1538767916
+#
+#
+# Files generated for nios on 2018.10.05.16:32:08
+files:
+filepath,kind,attributes,module,is_top
+simulation/nios.v,VERILOG,,nios,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+nios.LCD_Custom_0,nios_LCD_Custom_0
+nios.buttons,nios_buttons
+nios.jtag,nios_jtag
+nios.lcd_data,nios_lcd_data
+nios.lcd_en,nios_lcd_en
+nios.lcd_rs,nios_lcd_en
+nios.lcd_rw,nios_lcd_en
+nios.leds,nios_leds
+nios.memory,nios_memory
+nios.nios2,nios_nios2
+nios.nios2_custom_instruction_master_translator,altera_customins_master_translator
+nios.mm_interconnect_0,nios_mm_interconnect_0
+nios.irq_mapper,nios_irq_mapper
+nios.rst_controller,altera_reset_controller

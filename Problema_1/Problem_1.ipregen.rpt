@@ -1,0 +1,284 @@
+IP Upgrade report for Problem_1
+Fri Oct 05 16:32:50 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Fri Oct 05 16:32:50 2018           ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                ; Problem_1                                   ;
+; Top-level Entity Name        ; LCD                                         ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                   ;
++-------------+----------------+---------+-------------------------+----------------------+-----------------+----------------------------------------------------+
+; Entity Name ; Component Name ; Version ; Original Source File    ; Generation File Path ; New Source File ; Message                                            ;
++-------------+----------------+---------+-------------------------+----------------------+-----------------+----------------------------------------------------+
+; nios        ; Qsys           ; 13.1    ; nios/synthesis/nios.qip ; nios.qsys            ;                 ; Error upgrading Platform Designer file "nios.qsys" ;
++-------------+----------------+---------+-------------------------+----------------------+-----------------+----------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "nios.qsys" to "nios.BAK.qsys"
+Info (11902): Backing up file "nios/synthesis/nios.v" to "nios.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "nios.qsys"
+Info: 2018.10.05.16:31:33 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2018.10.05.16:31:34 Info: Upgrading from core type Nios II (Classic) Processor with version 13.1 to core type Nios II Processor with version 18.1
+Info: 2018.10.05.16:31:34 Info: Migration Successful
+Info: 2018.10.05.16:31:35 Info: Finished upgrading the ip cores
+Info: 2018.10.05.16:31:53 Info: Saving generation log to C:/Projects/SD/Problema_1/nios
+Info: 2018.10.05.16:31:53 Info: Starting: Create simulation model
+Info: 2018.10.05.16:31:53 Info: qsys-generate C:\Projects\SD\Problema_1\nios.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Projects\SD\Problema_1\nios\simulation --family="Cyclone IV E" --part=EP4CE6E22C8
+Info: 2018.10.05.16:31:53 Info: Loading Problema_1
+Info: 2018.10.05.16:31:53 Info: Reading input file
+Info: 2018.10.05.16:31:53 Info: Adding LCD_Custom_0 [LCD_Custom 1.0]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module LCD_Custom_0
+Info: 2018.10.05.16:31:53 Info: Adding buttons [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module buttons
+Info: 2018.10.05.16:31:53 Info: Adding clock [clock_source 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module clock
+Info: 2018.10.05.16:31:53 Info: Adding jtag [altera_avalon_jtag_uart 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module jtag
+Info: 2018.10.05.16:31:53 Info: Adding lcd_data [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module lcd_data
+Info: 2018.10.05.16:31:53 Info: Adding lcd_en [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module lcd_en
+Info: 2018.10.05.16:31:53 Info: Adding lcd_rs [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module lcd_rs
+Info: 2018.10.05.16:31:53 Info: Adding lcd_rw [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module lcd_rw
+Info: 2018.10.05.16:31:53 Info: Adding leds [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module leds
+Info: 2018.10.05.16:31:53 Info: Adding memory [altera_avalon_onchip_memory2 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module memory
+Info: 2018.10.05.16:31:53 Info: Adding nios2 [altera_nios2_gen2 18.1]
+Info: 2018.10.05.16:31:53 Info: Parameterizing module nios2
+Info: 2018.10.05.16:31:53 Info: Building connections
+Info: 2018.10.05.16:31:53 Info: Parameterizing connections
+Info: 2018.10.05.16:31:53 Info: Validating
+Info: 2018.10.05.16:31:55 Info: Done reading input file
+Info: 2018.10.05.16:31:56 Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2018.10.05.16:31:56 Info: nios.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2018.10.05.16:31:57 Info: nios: Generating nios "nios" for SIM_VERILOG
+Warning: 2018.10.05.16:32:07 Warning: nios: "No matching role found for nios2:custom_instruction_master:dummy_ci_port (readra)"
+Warning: 2018.10.05.16:32:07 Warning: nios: "No matching role found for nios2_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Error: 2018.10.05.16:32:08 Error: LCD_Custom_0: LCD_Custom does not support generation for Verilog Simulation. Generation is available for: Quartus Synthesis.
+Error: 2018.10.05.16:32:08 Error: Generation stopped, 13 or more modules remaining
+Info: 2018.10.05.16:32:08 Info: nios: Done "nios" with 13 modules, 1 files
+Error: 2018.10.05.16:32:08 Error: qsys-generate failed with exit code 1: 3 Errors, 2 Warnings
+Info: 2018.10.05.16:32:08 Info: Finished: Create simulation model
+Info: 2018.10.05.16:32:08 Info: Starting: Create Modelsim Project.
+Info: 2018.10.05.16:32:08 Info: sim-script-gen --spd=C:\Projects\SD\Problema_1\nios\nios.spd --output-directory=C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:08 Info: Doing: ip-make-simscript --spd=C:\Projects\SD\Problema_1\nios\nios.spd --output-directory=C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info: Generating the following file(s) for MODELSIM simulator in C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info:     mentor
+Info: 2018.10.05.16:32:10 Info: Generating the following file(s) for VCS simulator in C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info:     synopsys/vcs
+Info: 2018.10.05.16:32:10 Info: Generating the following file(s) for VCSMX simulator in C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info:     synopsys/vcsmx
+Info: 2018.10.05.16:32:10 Info:     synopsys/vcsmx
+Info: 2018.10.05.16:32:10 Info: Generating the following file(s) for NCSIM simulator in C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info:     cadence
+Info: 2018.10.05.16:32:10 Info:     cadence
+Info: 2018.10.05.16:32:10 Info:     cadence
+Info: 2018.10.05.16:32:10 Info: Generating the following file(s) for RIVIERA simulator in C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info:     aldec
+Info: 2018.10.05.16:32:10 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Projects/SD/Problema_1/nios/simulation
+Info: 2018.10.05.16:32:10 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2018.10.05.16:32:10 Info: Finished: Create Modelsim Project.
+Info: 2018.10.05.16:32:10 Info: Starting: Create block symbol file (.bsf)
+Info: 2018.10.05.16:32:10 Info: qsys-generate C:\Projects\SD\Problema_1\nios.qsys --block-symbol-file --output-directory=C:\Projects\SD\Problema_1\nios --family="Cyclone IV E" --part=EP4CE6E22C8
+Info: 2018.10.05.16:32:10 Info: Loading Problema_1
+Info: 2018.10.05.16:32:10 Info: Reading input file
+Info: 2018.10.05.16:32:10 Info: Adding LCD_Custom_0 [LCD_Custom 1.0]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module LCD_Custom_0
+Info: 2018.10.05.16:32:10 Info: Adding buttons [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module buttons
+Info: 2018.10.05.16:32:10 Info: Adding clock [clock_source 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module clock
+Info: 2018.10.05.16:32:10 Info: Adding jtag [altera_avalon_jtag_uart 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module jtag
+Info: 2018.10.05.16:32:10 Info: Adding lcd_data [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module lcd_data
+Info: 2018.10.05.16:32:10 Info: Adding lcd_en [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module lcd_en
+Info: 2018.10.05.16:32:10 Info: Adding lcd_rs [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module lcd_rs
+Info: 2018.10.05.16:32:10 Info: Adding lcd_rw [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module lcd_rw
+Info: 2018.10.05.16:32:10 Info: Adding leds [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module leds
+Info: 2018.10.05.16:32:10 Info: Adding memory [altera_avalon_onchip_memory2 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module memory
+Info: 2018.10.05.16:32:10 Info: Adding nios2 [altera_nios2_gen2 18.1]
+Info: 2018.10.05.16:32:10 Info: Parameterizing module nios2
+Info: 2018.10.05.16:32:10 Info: Building connections
+Info: 2018.10.05.16:32:10 Info: Parameterizing connections
+Info: 2018.10.05.16:32:10 Info: Validating
+Info: 2018.10.05.16:32:11 Info: Done reading input file
+Info: 2018.10.05.16:32:12 Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2018.10.05.16:32:12 Info: nios.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2018.10.05.16:32:13 Info: qsys-generate succeeded.
+Info: 2018.10.05.16:32:13 Info: Finished: Create block symbol file (.bsf)
+Info: 2018.10.05.16:32:13 Info:
+Info: 2018.10.05.16:32:13 Info: Starting: Create HDL design files for synthesis
+Info: 2018.10.05.16:32:13 Info: qsys-generate C:\Projects\SD\Problema_1\nios.qsys --synthesis=VERILOG --output-directory=C:\Projects\SD\Problema_1\nios\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Info: 2018.10.05.16:32:13 Info: Loading Problema_1
+Info: 2018.10.05.16:32:14 Info: Reading input file
+Info: 2018.10.05.16:32:14 Info: Adding LCD_Custom_0 [LCD_Custom 1.0]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module LCD_Custom_0
+Info: 2018.10.05.16:32:14 Info: Adding buttons [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module buttons
+Info: 2018.10.05.16:32:14 Info: Adding clock [clock_source 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module clock
+Info: 2018.10.05.16:32:14 Info: Adding jtag [altera_avalon_jtag_uart 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module jtag
+Info: 2018.10.05.16:32:14 Info: Adding lcd_data [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module lcd_data
+Info: 2018.10.05.16:32:14 Info: Adding lcd_en [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module lcd_en
+Info: 2018.10.05.16:32:14 Info: Adding lcd_rs [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module lcd_rs
+Info: 2018.10.05.16:32:14 Info: Adding lcd_rw [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module lcd_rw
+Info: 2018.10.05.16:32:14 Info: Adding leds [altera_avalon_pio 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module leds
+Info: 2018.10.05.16:32:14 Info: Adding memory [altera_avalon_onchip_memory2 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module memory
+Info: 2018.10.05.16:32:14 Info: Adding nios2 [altera_nios2_gen2 18.1]
+Info: 2018.10.05.16:32:14 Info: Parameterizing module nios2
+Info: 2018.10.05.16:32:14 Info: Building connections
+Info: 2018.10.05.16:32:14 Info: Parameterizing connections
+Info: 2018.10.05.16:32:14 Info: Validating
+Info: 2018.10.05.16:32:14 Info: Done reading input file
+Info: 2018.10.05.16:32:15 Info: nios.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2018.10.05.16:32:15 Info: nios.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2018.10.05.16:32:16 Info: nios: Generating nios "nios" for QUARTUS_SYNTH
+Warning: 2018.10.05.16:32:21 Warning: nios: "No matching role found for nios2:custom_instruction_master:dummy_ci_port (readra)"
+Warning: 2018.10.05.16:32:21 Warning: nios: "No matching role found for nios2_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Info: 2018.10.05.16:32:21 Info: LCD_Custom_0: "nios" instantiated LCD_Custom "LCD_Custom_0"
+Info: 2018.10.05.16:32:21 Info: buttons: Starting RTL generation for module 'nios_buttons'
+Info: 2018.10.05.16:32:21 Info: buttons:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_buttons --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0004_buttons_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0004_buttons_gen/
+Info: 2018.10.05.16:32:25 Info: buttons: Done RTL generation for module 'nios_buttons'
+Info: 2018.10.05.16:32:25 Info: buttons: "nios" instantiated altera_avalon_pio "buttons"
+Info: 2018.10.05.16:32:25 Info: jtag: Starting RTL generation for module 'nios_jtag'
+Info: 2018.10.05.16:32:25 Info: jtag:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_jtag --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0005_jtag_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0005_jtag_gen/
+Info: 2018.10.05.16:32:26 Info: jtag: Done RTL generation for module 'nios_jtag'
+Info: 2018.10.05.16:32:26 Info: jtag: "nios" instantiated altera_avalon_jtag_uart "jtag"
+Info: 2018.10.05.16:32:26 Info: lcd_data: Starting RTL generation for module 'nios_lcd_data'
+Info: 2018.10.05.16:32:26 Info: lcd_data:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_lcd_data --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0006_lcd_data_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0006_lcd_data_gen/
+Info: 2018.10.05.16:32:26 Info: lcd_data: Done RTL generation for module 'nios_lcd_data'
+Info: 2018.10.05.16:32:26 Info: lcd_data: "nios" instantiated altera_avalon_pio "lcd_data"
+Info: 2018.10.05.16:32:27 Info: lcd_en: Starting RTL generation for module 'nios_lcd_en'
+Info: 2018.10.05.16:32:27 Info: lcd_en:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_lcd_en --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0007_lcd_en_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0007_lcd_en_gen/
+Info: 2018.10.05.16:32:27 Info: lcd_en: Done RTL generation for module 'nios_lcd_en'
+Info: 2018.10.05.16:32:27 Info: lcd_en: "nios" instantiated altera_avalon_pio "lcd_en"
+Info: 2018.10.05.16:32:27 Info: leds: Starting RTL generation for module 'nios_leds'
+Info: 2018.10.05.16:32:27 Info: leds:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_leds --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0008_leds_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0008_leds_gen/
+Info: 2018.10.05.16:32:27 Info: leds: Done RTL generation for module 'nios_leds'
+Info: 2018.10.05.16:32:27 Info: leds: "nios" instantiated altera_avalon_pio "leds"
+Info: 2018.10.05.16:32:27 Info: memory: Starting RTL generation for module 'nios_memory'
+Info: 2018.10.05.16:32:27 Info: memory:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_memory --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0009_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0009_memory_gen/
+Info: 2018.10.05.16:32:28 Info: memory: Done RTL generation for module 'nios_memory'
+Info: 2018.10.05.16:32:28 Info: memory: "nios" instantiated altera_avalon_onchip_memory2 "memory"
+Info: 2018.10.05.16:32:29 Info: nios2: "nios" instantiated altera_nios2_gen2 "nios2"
+Info: 2018.10.05.16:32:29 Info: nios2_custom_instruction_master_translator: "nios" instantiated altera_customins_master_translator "nios2_custom_instruction_master_translator"
+Info: 2018.10.05.16:32:32 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:32 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:33 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:33 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:33 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:34 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:34 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:35 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:35 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: 2018.10.05.16:32:39 Info: mm_interconnect_0: "nios" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2018.10.05.16:32:39 Info: irq_mapper: "nios" instantiated altera_irq_mapper "irq_mapper"
+Info: 2018.10.05.16:32:39 Info: rst_controller: "nios" instantiated altera_reset_controller "rst_controller"
+Info: 2018.10.05.16:32:39 Info: cpu: Starting RTL generation for module 'nios_nios2_cpu'
+Info: 2018.10.05.16:32:39 Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_nios2_cpu --dir=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/mathe/AppData/Local/Temp/alt7809_1040642378868730993.dir/0013_cpu_gen/
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:43 (*) Starting Nios II generation
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:43 (*)   Checking for plaintext license.
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   LM_LICENSE_FILE environment variable is empty
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   Plaintext license not found.
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   No license required to generate encrypted Nios II
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   Elaborating CPU configuration settings
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:44 (*)   Creating all objects for CPU
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:46 (*)   Generating RTL from CPU objects
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:46 (*)   Creating plain-text RTL
+Info: 2018.10.05.16:32:48 Info: cpu: # 2018.10.05 16:32:47 (*) Done Nios II generation
+Info: 2018.10.05.16:32:48 Info: cpu: Done RTL generation for module 'nios_nios2_cpu'
+Info: 2018.10.05.16:32:48 Info: cpu: "nios2" instantiated altera_nios2_gen2_unit "cpu"
+Info: 2018.10.05.16:32:48 Info: nios2_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_data_master_translator"
+Info: 2018.10.05.16:32:48 Info: jtag_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_avalon_jtag_slave_translator"
+Info: 2018.10.05.16:32:48 Info: nios2_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_data_master_agent"
+Info: 2018.10.05.16:32:48 Info: jtag_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_avalon_jtag_slave_agent"
+Info: 2018.10.05.16:32:48 Info: jtag_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_avalon_jtag_slave_agent_rsp_fifo"
+Info: 2018.10.05.16:32:48 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2018.10.05.16:32:48 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2018.10.05.16:32:48 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2018.10.05.16:32:48 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2018.10.05.16:32:48 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2018.10.05.16:32:48 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2018.10.05.16:32:48 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2018.10.05.16:32:48 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2018.10.05.16:32:48 Info: Reusing file C:/Projects/SD/Problema_1/nios/synthesis/submodules
+Info: 2018.10.05.16:32:48 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2018.10.05.16:32:48 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2018.10.05.16:32:49 Info: Reusing file C:/Projects/SD/Problema_1/nios/synthesis/submodules
+Info: 2018.10.05.16:32:49 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2018.10.05.16:32:49 Info: Reusing file C:/Projects/SD/Problema_1/nios/synthesis/submodules
+Info: 2018.10.05.16:32:49 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2018.10.05.16:32:49 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2018.10.05.16:32:49 Info: nios: Done "nios" with 32 modules, 45 files
+Error: 2018.10.05.16:32:50 Error: qsys-generate failed with exit code 1: 1 Error, 2 Warnings
+Info: 2018.10.05.16:32:50 Info: Finished: Create HDL design files for synthesis
+Info (11904): Restoring file "nios.BAK.qsys" to "nios.qsys"
+Error (14923): Error upgrading Platform Designer file "nios.qsys"
+Error (11890): Unable to automatically upgrade Platform Designer component. Please manually upgrade "nios.qsys" in Platform Designer
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 10 errors, 4 warnings
+    Error: Peak virtual memory: 774 megabytes
+    Error: Processing ended: Fri Oct 05 16:32:51 2018
+    Error: Elapsed time: 00:01:59
+    Error: Total CPU time (on all processors): 00:03:38
+
+

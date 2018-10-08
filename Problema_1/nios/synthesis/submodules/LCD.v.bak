@@ -1,0 +1,10 @@
+module LCD(
+	input [31:0] dataa,
+	output [31:0] result,
+	output LED
+);
+	reg status = dataa[0];
+
+	assign LED = status;
+
+endmodule
