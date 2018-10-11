@@ -27,65 +27,66 @@ void enable() {
 
 void clear_display() {
 	// clear display - 00000001
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 0);
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x1);
+	ALT_CI_LCD_DRIVER(0x1, 0);
 	enable();
 	usleep(3000);
+
+	//IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 0);
+	//IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x1);
+	//enable();
+	//usleep(3000);
 }
 
 void write_text(char* text) {
-	clear_display();
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 1);
+	//clear_display();
+	//IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 1);
 
-	int i;
-	for (i = 0; i < 9; i++) {
-		IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, text[i]);
-		enable();
-		usleep(100);
-	}
+	//int i;
+	//for (i = 0; i < 9; i++) {
+		//IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, text[i]);
+		//enable();
+		//usleep(100);
+	//}
 }
 
 void init_lcd() {
-	// must be always 0
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 0);
 	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RW_BASE, 0);
 
 	// function set 3x - 00110000
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x30);
+	ALT_CI_LCD_DRIVER(0x30, 0);
 	enable();
 	usleep(4100);
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x30);
+	ALT_CI_LCD_DRIVER(0x30, 0);
 	enable();
 	usleep(100);
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x30);
+	ALT_CI_LCD_DRIVER(0x30, 0);
 	enable();
 	usleep(100);
 
 	// real function set - 00111000
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x38);
+	ALT_CI_LCD_DRIVER(0x38, 0);
 	enable();
 	usleep(100);
 
 	// display on/off - 00001000
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x8);
+	ALT_CI_LCD_DRIVER(0x8, 0);
 	enable();
 	usleep(100);
 
 	clear_display();
 
 	// entry mode - 00000110
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0x6);
+	ALT_CI_LCD_DRIVER(0x6, 0);
 	enable();
 	usleep(100);
 
 	// display on/off - 00001110 - cursor appears and doesn't blinks
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 0xE);
+	ALT_CI_LCD_DRIVER(0xE, 0);
 	enable();
 	usleep(100);
 
-	// send some data to test
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 1);
-	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, 'A');
+	// send some data to test - 00110000
+	ALT_CI_LCD_DRIVER(0x30, 1);
 	enable();
 	usleep(100);
 }
@@ -104,45 +105,6 @@ int main() {
 	int selected = 0;
 
 	init_lcd();
-
-	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
-	write_text(lcd_options[0]);
-
-	ALT_CI_LCD_CUSTOM_0(0x1);
-
-	while(1) {
-		int in = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE);
-
-		previous_i = i;
-
-		if (in == 13 && !selected) {
-			i++;
-		} else if (in == 14 && !selected) {
-			i--;
-		} else if (in == 7) {
-			// seleciona
-			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, outputs[i]);
-			selected = 1;
-		} else if (in == 11) {
-			selected = 0;
-			//apaga todos os leds
-			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
-		}
-
-		if (i > 4) {
-			i = 0;
-		}
-
-		if (i < 0) {
-			i = 4;
-		}
-
-		if (previous_i != i) {
-			write_text(lcd_options[i]);
-		}
-
-		usleep(100000);
-	}
 
 	return 0;
 }

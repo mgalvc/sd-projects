@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>08/10/2018 11:27:28</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1539008848230</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>11/10/2018 10:41:23</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1539265283837</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Projects\SD\Problema_1\software\leds_controller_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Projects\SD\Problema_1\nios.sopcinfo</SopcDesignFile>
@@ -905,44 +905,32 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>lcd_en</slaveDescriptor>
+                <slaveDescriptor>LCD_EN</slaveDescriptor>
                 <addressRange>0x00003000 - 0x0000300F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>lcd_data</slaveDescriptor>
+                <slaveDescriptor>LCD_RW</slaveDescriptor>
                 <addressRange>0x00003010 - 0x0000301F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>lcd_rw</slaveDescriptor>
+                <slaveDescriptor>leds</slaveDescriptor>
                 <addressRange>0x00003020 - 0x0000302F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>lcd_rs</slaveDescriptor>
+                <slaveDescriptor>buttons</slaveDescriptor>
                 <addressRange>0x00003030 - 0x0000303F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>leds</slaveDescriptor>
-                <addressRange>0x00003040 - 0x0000304F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>buttons</slaveDescriptor>
-                <addressRange>0x00003050 - 0x0000305F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>jtag</slaveDescriptor>
-                <addressRange>0x00003060 - 0x00003067</addressRange>
+                <addressRange>0x00003040 - 0x00003047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

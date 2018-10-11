@@ -32,7 +32,10 @@ module nios_nios2 (
 		output wire        debug_mem_slave_waitrequest,         //                          .waitrequest
 		input  wire        debug_mem_slave_write,               //                          .write
 		input  wire [31:0] debug_mem_slave_writedata,           //                          .writedata
-		input  wire [31:0] E_ci_result,                         // custom_instruction_master.result
+		input  wire        E_ci_multi_done,                     // custom_instruction_master.done
+		output wire        E_ci_multi_clk_en,                   //                          .clk_en
+		output wire        E_ci_multi_start,                    //                          .start
+		input  wire [31:0] E_ci_result,                         //                          .result
 		output wire [4:0]  D_ci_a,                              //                          .a
 		output wire [4:0]  D_ci_b,                              //                          .b
 		output wire [4:0]  D_ci_c,                              //                          .c
@@ -75,7 +78,10 @@ module nios_nios2 (
 		.debug_mem_slave_waitrequest         (debug_mem_slave_waitrequest),         //                          .waitrequest
 		.debug_mem_slave_write               (debug_mem_slave_write),               //                          .write
 		.debug_mem_slave_writedata           (debug_mem_slave_writedata),           //                          .writedata
-		.E_ci_result                         (E_ci_result),                         // custom_instruction_master.result
+		.E_ci_multi_done                     (E_ci_multi_done),                     // custom_instruction_master.done
+		.E_ci_multi_clk_en                   (E_ci_multi_clk_en),                   //                          .clk_en
+		.E_ci_multi_start                    (E_ci_multi_start),                    //                          .start
+		.E_ci_result                         (E_ci_result),                         //                          .result
 		.D_ci_a                              (D_ci_a),                              //                          .a
 		.D_ci_b                              (D_ci_b),                              //                          .b
 		.D_ci_c                              (D_ci_c),                              //                          .c

@@ -1,6 +1,6 @@
-11:27:36 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+10:41:38 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
 make all 
 [BSP build complete]
 
-11:27:37 Build Finished (took 1s.62ms)
+10:41:39 Build Finished (took 1s.156ms)
 
