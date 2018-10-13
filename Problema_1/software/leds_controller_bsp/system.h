@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios'
  * SOPC Builder design path: C:/Projects/SD/Problema_1/nios.sopcinfo
  *
- * Generated: Thu Oct 11 10:16:32 BRT 2018
+ * Generated: Sat Oct 13 11:25:54 BRT 2018
  */
 
 /*
@@ -129,15 +129,6 @@
 
 
 /*
- * Custom instruction macros
- *
- */
-
-#define ALT_CI_LCD_DRIVER(A,B) __builtin_custom_inii(ALT_CI_LCD_DRIVER_N,(A),(B))
-#define ALT_CI_LCD_DRIVER_N 0x0
-
-
-/*
  * Define for each module class mastered by the CPU
  *
  */
@@ -146,7 +137,33 @@
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
-#define __LCD_CUSTOM
+
+
+/*
+ * LCD_DATA configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_LCD_DATA altera_avalon_pio
+#define LCD_DATA_BASE 0x3030
+#define LCD_DATA_BIT_CLEARING_EDGE_REGISTER 0
+#define LCD_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LCD_DATA_CAPTURE 0
+#define LCD_DATA_DATA_WIDTH 8
+#define LCD_DATA_DO_TEST_BENCH_WIRING 0
+#define LCD_DATA_DRIVEN_SIM_VALUE 0
+#define LCD_DATA_EDGE_TYPE "NONE"
+#define LCD_DATA_FREQ 50000000
+#define LCD_DATA_HAS_IN 0
+#define LCD_DATA_HAS_OUT 1
+#define LCD_DATA_HAS_TRI 0
+#define LCD_DATA_IRQ -1
+#define LCD_DATA_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LCD_DATA_IRQ_TYPE "NONE"
+#define LCD_DATA_NAME "/dev/LCD_DATA"
+#define LCD_DATA_RESET_VALUE 0
+#define LCD_DATA_SPAN 16
+#define LCD_DATA_TYPE "altera_avalon_pio"
 
 
 /*
@@ -174,6 +191,33 @@
 #define LCD_EN_RESET_VALUE 0
 #define LCD_EN_SPAN 16
 #define LCD_EN_TYPE "altera_avalon_pio"
+
+
+/*
+ * LCD_RS configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_LCD_RS altera_avalon_pio
+#define LCD_RS_BASE 0x3020
+#define LCD_RS_BIT_CLEARING_EDGE_REGISTER 0
+#define LCD_RS_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define LCD_RS_CAPTURE 0
+#define LCD_RS_DATA_WIDTH 1
+#define LCD_RS_DO_TEST_BENCH_WIRING 0
+#define LCD_RS_DRIVEN_SIM_VALUE 0
+#define LCD_RS_EDGE_TYPE "NONE"
+#define LCD_RS_FREQ 50000000
+#define LCD_RS_HAS_IN 0
+#define LCD_RS_HAS_OUT 1
+#define LCD_RS_HAS_TRI 0
+#define LCD_RS_IRQ -1
+#define LCD_RS_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define LCD_RS_IRQ_TYPE "NONE"
+#define LCD_RS_NAME "/dev/LCD_RS"
+#define LCD_RS_RESET_VALUE 0
+#define LCD_RS_SPAN 16
+#define LCD_RS_TYPE "altera_avalon_pio"
 
 
 /*
@@ -219,19 +263,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag"
-#define ALT_STDERR_BASE 0x3040
+#define ALT_STDERR_BASE 0x3060
 #define ALT_STDERR_DEV jtag
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag"
-#define ALT_STDIN_BASE 0x3040
+#define ALT_STDIN_BASE 0x3060
 #define ALT_STDIN_DEV jtag
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag"
-#define ALT_STDOUT_BASE 0x3040
+#define ALT_STDOUT_BASE 0x3060
 #define ALT_STDOUT_DEV jtag
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -245,7 +289,7 @@
  */
 
 #define ALT_MODULE_CLASS_buttons altera_avalon_pio
-#define BUTTONS_BASE 0x3030
+#define BUTTONS_BASE 0x3050
 #define BUTTONS_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTONS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUTTONS_CAPTURE 0
@@ -282,7 +326,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag altera_avalon_jtag_uart
-#define JTAG_BASE 0x3040
+#define JTAG_BASE 0x3060
 #define JTAG_IRQ 0
 #define JTAG_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_NAME "/dev/jtag"
@@ -300,7 +344,7 @@
  */
 
 #define ALT_MODULE_CLASS_leds altera_avalon_pio
-#define LEDS_BASE 0x3020
+#define LEDS_BASE 0x3040
 #define LEDS_BIT_CLEARING_EDGE_REGISTER 0
 #define LEDS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LEDS_CAPTURE 0

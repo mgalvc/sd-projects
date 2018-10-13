@@ -9,7 +9,7 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element LCD_Driver
+   element LCD_DATA
    {
       datum _sortIndex
       {
@@ -17,11 +17,19 @@
          type = "int";
       }
    }
+   element LCD_DATA.s1
+   {
+      datum baseAddress
+      {
+         value = "12336";
+         type = "String";
+      }
+   }
    element LCD_EN
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "9";
          type = "int";
       }
    }
@@ -33,11 +41,27 @@
          type = "String";
       }
    }
-   element LCD_RW
+   element LCD_RS
    {
       datum _sortIndex
       {
          value = "7";
+         type = "int";
+      }
+   }
+   element LCD_RS.s1
+   {
+      datum baseAddress
+      {
+         value = "12320";
+         type = "String";
+      }
+   }
+   element LCD_RW
+   {
+      datum _sortIndex
+      {
+         value = "8";
          type = "int";
       }
    }
@@ -61,7 +85,7 @@
    {
       datum baseAddress
       {
-         value = "12336";
+         value = "12368";
          type = "String";
       }
    }
@@ -85,7 +109,7 @@
    {
       datum baseAddress
       {
-         value = "12352";
+         value = "12384";
          type = "String";
       }
    }
@@ -101,7 +125,7 @@
    {
       datum baseAddress
       {
-         value = "12320";
+         value = "12352";
          type = "String";
       }
    }
@@ -123,6 +147,22 @@
       datum baseAddress
       {
          value = "0";
+         type = "String";
+      }
+   }
+   element nios
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element nios
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
          type = "String";
       }
    }
@@ -225,16 +265,14 @@
    type="conduit"
    dir="end" />
  <interface name="clk" internal="clock.clk_in" type="clock" dir="end" />
- <interface name="data" internal="LCD_Driver.data" type="conduit" dir="end" />
- <interface name="enable" internal="LCD_Driver.enable" />
  <interface
-   name="lcd_en"
-   internal="LCD_EN.external_connection"
+   name="data"
+   internal="LCD_DATA.external_connection"
    type="conduit"
    dir="end" />
  <interface
-   name="lcd_rw"
-   internal="LCD_RW.external_connection"
+   name="en"
+   internal="LCD_EN.external_connection"
    type="conduit"
    dir="end" />
  <interface
@@ -243,10 +281,45 @@
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clock.clk_in_reset" type="reset" dir="end" />
- <interface name="rs" internal="LCD_Driver.rs" type="conduit" dir="end" />
- <interface name="rw" internal="LCD_Driver.rw" />
- <module name="LCD_Driver" kind="LCD_Custom" version="1.0" enabled="1" />
+ <interface
+   name="rs"
+   internal="LCD_RS.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="rw"
+   internal="LCD_RW.external_connection"
+   type="conduit"
+   dir="end" />
+ <module name="LCD_DATA" kind="altera_avalon_pio" version="18.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
  <module name="LCD_EN" kind="altera_avalon_pio" version="18.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module name="LCD_RS" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
@@ -329,7 +402,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName" value="nios_memory" />
+  <parameter name="autoInitializationFileName" value="$${FILENAME}_memory" />
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -368,14 +441,14 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="lcd_driver" baseAddress="0" addressSpan="1" clockCycleType="MULTICYCLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
   <parameter name="dataAddrWidth" value="14" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='memory.s1' start='0x0' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='LCD_EN.s1' start='0x3000' end='0x3010' type='altera_avalon_pio.s1' /><slave name='LCD_RW.s1' start='0x3010' end='0x3020' type='altera_avalon_pio.s1' /><slave name='leds.s1' start='0x3020' end='0x3030' type='altera_avalon_pio.s1' /><slave name='buttons.s1' start='0x3030' end='0x3040' type='altera_avalon_pio.s1' /><slave name='jtag.avalon_jtag_slave' start='0x3040' end='0x3048' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='memory.s1' start='0x0' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='LCD_EN.s1' start='0x3000' end='0x3010' type='altera_avalon_pio.s1' /><slave name='LCD_RW.s1' start='0x3010' end='0x3020' type='altera_avalon_pio.s1' /><slave name='LCD_RS.s1' start='0x3020' end='0x3030' type='altera_avalon_pio.s1' /><slave name='LCD_DATA.s1' start='0x3030' end='0x3040' type='altera_avalon_pio.s1' /><slave name='leds.s1' start='0x3040' end='0x3050' type='altera_avalon_pio.s1' /><slave name='buttons.s1' start='0x3050' end='0x3060' type='altera_avalon_pio.s1' /><slave name='jtag.avalon_jtag_slave' start='0x3060' end='0x3068' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -539,7 +612,7 @@
    start="nios2.data_master"
    end="jtag.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3040" />
+  <parameter name="baseAddress" value="0x3060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -566,10 +639,28 @@
    start="nios2.data_master"
    end="buttons.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3030" />
+  <parameter name="baseAddress" value="0x3050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="18.1" start="nios2.data_master" end="leds.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x3040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="nios2.data_master"
+   end="LCD_DATA.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x3030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="nios2.data_master"
+   end="LCD_RS.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x3020" />
   <parameter name="defaultConnection" value="false" />
@@ -614,20 +705,13 @@
  <connection kind="clock" version="18.1" start="clock.clk" end="buttons.clk" />
  <connection kind="clock" version="18.1" start="clock.clk" end="leds.clk" />
  <connection kind="clock" version="18.1" start="clock.clk" end="jtag.clk" />
+ <connection kind="clock" version="18.1" start="clock.clk" end="LCD_DATA.clk" />
+ <connection kind="clock" version="18.1" start="clock.clk" end="LCD_RS.clk" />
  <connection kind="clock" version="18.1" start="clock.clk" end="LCD_RW.clk" />
  <connection kind="clock" version="18.1" start="clock.clk" end="LCD_EN.clk" />
  <connection kind="clock" version="18.1" start="clock.clk" end="memory.clk1" />
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="jtag.irq">
   <parameter name="irqNumber" value="0" />
- </connection>
- <connection
-   kind="nios_custom_instruction"
-   version="18.1"
-   start="nios2.custom_instruction_master"
-   end="LCD_Driver.nios_custom_instruction_slave">
-  <parameter name="CIName" value="lcd_driver" />
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0" />
  </connection>
  <connection kind="reset" version="18.1" start="clock.clk_reset" end="nios2.reset" />
  <connection kind="reset" version="18.1" start="clock.clk_reset" end="leds.reset" />
@@ -637,6 +721,16 @@
    start="clock.clk_reset"
    end="buttons.reset" />
  <connection kind="reset" version="18.1" start="clock.clk_reset" end="jtag.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock.clk_reset"
+   end="LCD_DATA.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock.clk_reset"
+   end="LCD_RS.reset" />
  <connection
    kind="reset"
    version="18.1"
@@ -672,6 +766,16 @@
    version="18.1"
    start="nios2.debug_reset_request"
    end="jtag.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="LCD_DATA.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="nios2.debug_reset_request"
+   end="LCD_RS.reset" />
  <connection
    kind="reset"
    version="18.1"

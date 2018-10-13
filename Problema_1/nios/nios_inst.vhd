@@ -4,10 +4,10 @@
 			clk_clk                   : in  std_logic                    := 'X';             -- clk
 			leds_connection_export    : out std_logic_vector(4 downto 0);                    -- export
 			reset_reset_n             : in  std_logic                    := 'X';             -- reset_n
-			rs_lcd_rs                 : out std_logic;                                       -- lcd_rs
-			data_lcd_data             : out std_logic_vector(7 downto 0);                    -- lcd_data
-			lcd_rw_export             : out std_logic;                                       -- export
-			lcd_en_export             : out std_logic                                        -- export
+			data_export               : out std_logic_vector(7 downto 0);                    -- export
+			rs_export                 : out std_logic;                                       -- export
+			rw_export                 : out std_logic;                                       -- export
+			en_export                 : out std_logic                                        -- export
 		);
 	end component nios;
 
@@ -17,9 +17,9 @@
 			clk_clk                   => CONNECTED_TO_clk_clk,                   --                clk.clk
 			leds_connection_export    => CONNECTED_TO_leds_connection_export,    --    leds_connection.export
 			reset_reset_n             => CONNECTED_TO_reset_reset_n,             --              reset.reset_n
-			rs_lcd_rs                 => CONNECTED_TO_rs_lcd_rs,                 --                 rs.lcd_rs
-			data_lcd_data             => CONNECTED_TO_data_lcd_data,             --               data.lcd_data
-			lcd_rw_export             => CONNECTED_TO_lcd_rw_export,             --             lcd_rw.export
-			lcd_en_export             => CONNECTED_TO_lcd_en_export              --             lcd_en.export
+			data_export               => CONNECTED_TO_data_export,               --               data.export
+			rs_export                 => CONNECTED_TO_rs_export,                 --                 rs.export
+			rw_export                 => CONNECTED_TO_rw_export,                 --                 rw.export
+			en_export                 => CONNECTED_TO_en_export                  --                 en.export
 		);
 

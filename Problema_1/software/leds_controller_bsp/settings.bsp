@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>11/10/2018 10:41:23</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1539265283837</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>13/10/2018 11:25:49</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1539440749364</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Projects\SD\Problema_1\software\leds_controller_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Projects\SD\Problema_1\nios.sopcinfo</SopcDesignFile>
@@ -917,20 +917,32 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>leds</slaveDescriptor>
+                <slaveDescriptor>LCD_RS</slaveDescriptor>
                 <addressRange>0x00003020 - 0x0000302F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>buttons</slaveDescriptor>
+                <slaveDescriptor>LCD_DATA</slaveDescriptor>
                 <addressRange>0x00003030 - 0x0000303F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>leds</slaveDescriptor>
+                <addressRange>0x00003040 - 0x0000304F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>buttons</slaveDescriptor>
+                <addressRange>0x00003050 - 0x0000305F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag</slaveDescriptor>
-                <addressRange>0x00003040 - 0x00003047</addressRange>
+                <addressRange>0x00003060 - 0x00003067</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

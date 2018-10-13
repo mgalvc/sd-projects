@@ -78,15 +78,15 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/TestLCD.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_112 -to data_lcd_data[7]
-set_location_assignment PIN_85 -to rs_lcd_rs
-set_location_assignment PIN_101 -to data_lcd_data[0]
-set_location_assignment PIN_103 -to data_lcd_data[1]
-set_location_assignment PIN_104 -to data_lcd_data[2]
-set_location_assignment PIN_105 -to data_lcd_data[3]
-set_location_assignment PIN_106 -to data_lcd_data[4]
-set_location_assignment PIN_110 -to data_lcd_data[5]
-set_location_assignment PIN_111 -to data_lcd_data[6]
-set_location_assignment PIN_100 -to lcd_en_export
-set_location_assignment PIN_99 -to lcd_rw_export
+set_location_assignment PIN_85 -to rs_export
+set_location_assignment PIN_99 -to rw_export
+set_location_assignment PIN_112 -to data_export[7]
+set_location_assignment PIN_111 -to data_export[6]
+set_location_assignment PIN_110 -to data_export[5]
+set_location_assignment PIN_106 -to data_export[4]
+set_location_assignment PIN_105 -to data_export[3]
+set_location_assignment PIN_104 -to data_export[2]
+set_location_assignment PIN_103 -to data_export[1]
+set_location_assignment PIN_101 -to data_export[0]
+set_location_assignment PIN_100 -to en_export
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

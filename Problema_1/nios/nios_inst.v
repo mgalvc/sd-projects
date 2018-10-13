@@ -3,9 +3,9 @@
 		.clk_clk                   (<connected-to-clk_clk>),                   //                clk.clk
 		.leds_connection_export    (<connected-to-leds_connection_export>),    //    leds_connection.export
 		.reset_reset_n             (<connected-to-reset_reset_n>),             //              reset.reset_n
-		.rs_lcd_rs                 (<connected-to-rs_lcd_rs>),                 //                 rs.lcd_rs
-		.data_lcd_data             (<connected-to-data_lcd_data>),             //               data.lcd_data
-		.lcd_rw_export             (<connected-to-lcd_rw_export>),             //             lcd_rw.export
-		.lcd_en_export             (<connected-to-lcd_en_export>)              //             lcd_en.export
+		.data_export               (<connected-to-data_export>),               //               data.export
+		.rs_export                 (<connected-to-rs_export>),                 //                 rs.export
+		.rw_export                 (<connected-to-rw_export>),                 //                 rw.export
+		.en_export                 (<connected-to-en_export>)                  //                 en.export
 	);
 

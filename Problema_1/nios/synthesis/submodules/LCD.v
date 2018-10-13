@@ -4,22 +4,27 @@ module LCD (
 	clk,
 	clk_en,
 	reset,
-	LCD_RS,
-	LCD_DATA
+	lcd_rs,
+	lcd_rw,
+	lcd_en,
+	lcd_data
 );
 
-	input [31:0] dataa;
-	input [31:0] datab;
-	input clk;
-	input clk_en;
-	input reset;
+	input wire [7:0] dataa;
+	input wire datab;
+	input clk, clk_en, reset;
+	output reg lcd_rs, lcd_rw, lcd_en;
+	output reg [7:0] lcd_data;
 	
-	output reg LCD_RS;
-	output reg [7:0] LCD_DATA;
-
-	always @ (posedge clk or posedge reset) begin
-		#6 LCD_RS <= datab[0];
-		#4 LCD_DATA[7:0] <= dataa[7:0];
+	initial begin
+		lcd_rw = 0;
+		lcd_en = 1;
 	end
-
+	
+	always @ (posedge clk) begin
+		lcd_data <= dataa;
+		lcd_rs <= datab;
+	end
+  
 endmodule
+

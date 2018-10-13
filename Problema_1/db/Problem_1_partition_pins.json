@@ -4,43 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "data_lcd_data[0]",
+					"name" : "data_export[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[1]",
+					"name" : "data_export[1]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[2]",
+					"name" : "data_export[2]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[3]",
+					"name" : "data_export[3]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[4]",
+					"name" : "data_export[4]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[5]",
+					"name" : "data_export[5]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[6]",
+					"name" : "data_export[6]",
 					"strict" : false
 				},
 				{
-					"name" : "data_lcd_data[7]",
+					"name" : "data_export[7]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_en_export",
-					"strict" : false
-				},
-				{
-					"name" : "lcd_rw_export",
+					"name" : "en_export",
 					"strict" : false
 				},
 				{
@@ -64,7 +60,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rs_lcd_rs",
+					"name" : "rs_export",
+					"strict" : false
+				},
+				{
+					"name" : "rw_export",
 					"strict" : false
 				},
 				{
