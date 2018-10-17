@@ -33,12 +33,12 @@ void clear_display() {
 	usleep(3000);
 }
 
-void write_text(char* text) {
+void write_text(char* text, int size) {
 	clear_display();
 	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 1);
 
 	int i;
-	for (i = 0; i < 9; i++) {
+	for (i = 0; i < size; i++) {
 		IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, text[i]);
 		enable();
 		usleep(100);
@@ -90,6 +90,7 @@ void init_lcd() {
 
 int main() {
 	int outputs[] = {15, 23, 27, 29, 30};
+
 	char lcd_options[][9] = {
 			"1 - LED A",
 			"2 - LED B",
@@ -97,6 +98,15 @@ int main() {
 			"4 - LED D",
 			"5 - LED E"
 	};
+
+	char lcd_option_selected[][8] = {
+			"LED A ON",
+			"LED B ON",
+			"LED C ON",
+			"LED D ON",
+			"LED E ON",
+	};
+
 	int i = 0;
 	int previous_i;
 	int selected = 0;
@@ -104,7 +114,7 @@ int main() {
 	init_lcd();
 
 	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
-	write_text(lcd_options[0]);
+	write_text(lcd_options[0], 9);
 
 	while(1) {
 		int in = IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE);
@@ -118,11 +128,13 @@ int main() {
 		} else if (in == 7) {
 			// seleciona
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, outputs[i]);
+			write_text(lcd_option_selected[i], 8);
 			selected = 1;
 		} else if (in == 11) {
 			selected = 0;
 			//apaga todos os leds
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
+			write_text(lcd_options[i], 9);
 		}
 
 		if (i > 4) {
@@ -134,7 +146,7 @@ int main() {
 		}
 
 		if (previous_i != i) {
-			write_text(lcd_options[i]);
+			write_text(lcd_options[i], 9);
 		}
 
 		usleep(100000);
