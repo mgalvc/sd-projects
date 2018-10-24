@@ -1,8 +1,7 @@
 module LCD (
+	clk,
 	dataa,
 	datab,
-	clk,
-	clk_en,
 	reset,
 	lcd_rs,
 	lcd_rw,
@@ -12,16 +11,26 @@ module LCD (
 
 	input wire [7:0] dataa;
 	input wire datab;
-	input clk, clk_en, reset;
-	output reg lcd_rs, lcd_rw, lcd_en;
-	output reg [7:0] lcd_data;
+	input clk, reset;
 	
-	initial begin
-		lcd_rw = 0;
-		lcd_en = 1;
+	output lcd_rw;
+	output reg lcd_rs, lcd_en;
+	output reg[7:0] lcd_data;	
+	
+	wire rData = dataa != 0;
+	assign lcd_rw = 0;
+	
+	reg [2:0] count;
+	always @(posedge clk) if(rData | (count!=0)) count <= count + 1;
+
+	always @(posedge clk) begin
+		if(lcd_en == 0)
+		  lcd_en <= rData;
+		else
+		  lcd_en <= (count!=6);
 	end
 	
-	always @ (posedge clk) begin
+	always @(posedge clk) begin
 		lcd_data <= dataa;
 		lcd_rs <= datab;
 	end

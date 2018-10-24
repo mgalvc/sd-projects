@@ -2509,7 +2509,7 @@ int alt_get_fd (alt_dev* dev)
      f48:	00bfffc4 	movi	r2,-1
      f4c:	00003106 	br	1014 <__register_exitproc+0x134>
      f50:	01002304 	movi	r4,140
-     f54:	00000000 	call	0 <__reset>
+     f54:	00000000 	call	0 <__alt_mem_memory>
      f58:	1021883a 	mov	r16,r2
      f5c:	103ffa26 	beq	r2,zero,f48 <_gp+0xffff7894>
      f60:	10000115 	stw	zero,4(r2)
@@ -2527,7 +2527,7 @@ int alt_get_fd (alt_dev* dev)
      f90:	10800004 	addi	r2,r2,0
      f94:	103fec26 	beq	r2,zero,f48 <_gp+0xffff7894>
      f98:	01004204 	movi	r4,264
-     f9c:	00000000 	call	0 <__reset>
+     f9c:	00000000 	call	0 <__alt_mem_memory>
      fa0:	103fe926 	beq	r2,zero,f48 <_gp+0xffff7894>
      fa4:	10004015 	stw	zero,256(r2)
      fa8:	10004115 	stw	zero,260(r2)
@@ -2648,9 +2648,9 @@ int alt_get_fd (alt_dev* dev)
     116c:	89000015 	stw	r4,0(r17)
     1170:	a8000226 	beq	r21,zero,117c <__call_exitprocs+0x144>
     1174:	a809883a 	mov	r4,r21
-    1178:	00000000 	call	0 <__reset>
+    1178:	00000000 	call	0 <__alt_mem_memory>
     117c:	9809883a 	mov	r4,r19
-    1180:	00000000 	call	0 <__reset>
+    1180:	00000000 	call	0 <__alt_mem_memory>
     1184:	8cc00017 	ldw	r19,0(r17)
     1188:	003fbd06 	br	1080 <_gp+0xffff79cc>
     118c:	9823883a 	mov	r17,r19
