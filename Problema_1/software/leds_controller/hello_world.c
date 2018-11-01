@@ -15,9 +15,9 @@
  */
 
 #include "altera_avalon_pio_regs.h"
-//#include "io.h"
 #include "system.h"
-#include "sys/alt_stdio.h"
+#include "sys/alt_stdio.h";
+#include "altera_avalon_uart_regs.h"
 
 void enable() {
 	IOWR_ALTERA_AVALON_PIO_DATA(LCD_EN_BASE, 1);
@@ -88,6 +88,48 @@ void init_lcd() {
 	usleep(100);
 }
 
+void sendATCommand(char* command, int size) {
+	int i = 0;
+	while (i < size) {
+		if (IORD_ALTERA_AVALON_UART_STATUS(UART_BASE) & ALTERA_AVALON_UART_STATUS_TRDY_MSK) {
+			IOWR_ALTERA_AVALON_UART_TXDATA(UART_BASE, command[i]);
+			i++;
+		}
+	}
+}
+
+unsigned int uart_ok() {
+	char a;
+
+	while (1) {
+		a = IORD_ALTERA_AVALON_UART_RXDATA(UART_BASE);
+		if (a == 'K') {
+			return 1;
+		}
+	}
+}
+
+void init_esp() {
+	write_text("WAITING...", 10);
+
+	while (1) {
+		if (IORD_ALTERA_AVALON_PIO_DATA(BUTTONS_BASE) == 7) {
+			break;
+		}
+		usleep(100000);
+	}
+
+	alt_putstr("AT+CWMODE_CUR=3\r\n");
+	uart_ok();
+
+	write_text("WIFI...", 7);
+	alt_putstr("AT+CWJAP_CUR=\"digito\",\"tjmf010510\"\r\n");
+	uart_ok();
+
+	write_text("CONNECTED", 9);
+	usleep(2000000);
+}
+
 int main() {
 	int outputs[] = {15, 23, 27, 29, 30};
 
@@ -111,9 +153,10 @@ int main() {
 	int previous_i;
 	int selected = 0;
 
-	init_lcd();
-
 	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
+	init_lcd();
+	init_esp();
+
 	write_text(lcd_options[0], 9);
 
 	while(1) {
@@ -133,6 +176,10 @@ int main() {
 		} else if (in == 11) {
 			selected = 0;
 			//apaga todos os leds
+			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
+			write_text(lcd_options[i], 9);
+		} else if (in == 12 ) {
+			init_esp();
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, 31);
 			write_text(lcd_options[i], 9);
 		}

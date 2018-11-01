@@ -1,13 +1,13 @@
-// (C) 2001-2013 Altera Corporation. All rights reserved.
-// Your use of Altera Corporation's design tools, logic functions and other 
+// (C) 2001-2018 Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
-// files any of the foregoing (including device programming or simulation 
+// files from any of the foregoing (including device programming or simulation 
 // files), and any associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License Subscription 
-// Agreement, Altera MegaCore Function License Agreement, or other applicable 
+// to the terms and conditions of the Intel Program License Subscription 
+// Agreement, Intel FPGA IP License Agreement, or other applicable 
 // license agreement, including, without limitation, that your use is for the 
-// sole purpose of programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the applicable 
+// sole purpose of programming logic devices manufactured by Intel and sold by 
+// Intel or its authorized distributors.  Please refer to the applicable 
 // agreement for further details.
 
 
@@ -20,8 +20,8 @@
 // $Source: /ipbu/cvs/sio/projects/TriSpeedEthernet/src/RTL/MAC/mac/rgmii/altera_tse_rgmii_module.v,v $
 //
 // $Revision: #1 $
-// $Date: 2013/08/11 $
-// Check in by : $Author: swbranch $
+// $Date: 2018/07/18 $
+// Check in by : $Author: psgswbuild $
 // Author      : Arul Paniandi
 //
 // Project     : Triple Speed Ethernet - 10/100/1000 MAC
@@ -229,13 +229,13 @@ begin
 	end
 end
  
-altera_std_synchronizer #(SYNCHRONIZER_DEPTH) U_SYNC_1(
+altera_eth_tse_std_synchronizer #(SYNCHRONIZER_DEPTH) U_SYNC_1(
 			.clk(tx_clk), // INPUT
 			.reset_n(~reset_tx_clk), //INPUT
 			.din(m_rx_col_reg), //INPUT
 			.dout(m_rx_col));// OUTPUT
 
-altera_std_synchronizer #(SYNCHRONIZER_DEPTH) U_SYNC_2(
+altera_eth_tse_std_synchronizer #(SYNCHRONIZER_DEPTH) U_SYNC_2(
 			.clk(tx_clk), // INPUT
 			.reset_n(~reset_tx_clk), //INPUT
 			.din(speed), //INPUT

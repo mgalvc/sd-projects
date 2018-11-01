@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Oct 24 15:42:00 2018
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Fitter Status : Successful - Wed Oct 31 15:39:26 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Problem_1
-Top-level Entity Name : TOP
+Top-level Entity Name : nios
 Family : Cyclone IV E
-Device : EP4CE30F23A7
+Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 5,174 / 28,848 ( 18 % )
-    Total combinational functions : 4,274 / 28,848 ( 15 % )
-    Dedicated logic registers : 3,372 / 28,848 ( 12 % )
-Total registers : 3372
-Total pins : 37 / 329 ( 11 % )
+Total logic elements : 1,796 / 6,272 ( 29 % )
+    Total combinational functions : 1,678 / 6,272 ( 27 % )
+    Dedicated logic registers : 958 / 6,272 ( 15 % )
+Total registers : 958
+Total pins : 23 / 92 ( 25 % )
 Total virtual pins : 0
-Total memory bits : 185,714 / 608,256 ( 31 % )
-Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total memory bits : 141,312 / 276,480 ( 51 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

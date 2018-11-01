@@ -5,9 +5,10 @@
 			data_export               : out std_logic_vector(7 downto 0);                    -- export
 			en_export                 : out std_logic;                                       -- export
 			leds_connection_export    : out std_logic_vector(4 downto 0);                    -- export
-			reset_reset_n             : in  std_logic                    := 'X';             -- reset_n
 			rs_export                 : out std_logic;                                       -- export
-			rw_export                 : out std_logic                                        -- export
+			rw_export                 : out std_logic;                                       -- export
+			uart_rxd                  : in  std_logic                    := 'X';             -- rxd
+			uart_txd                  : out std_logic                                        -- txd
 		);
 	end component nios;
 
