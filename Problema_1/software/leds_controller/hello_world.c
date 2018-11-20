@@ -123,10 +123,35 @@ void init_esp() {
 	uart_ok();
 
 	write_text("WIFI...", 7);
-	alt_putstr("AT+CWJAP_CUR=\"digito\",\"tjmf010510\"\r\n");
+	alt_putstr("AT+CWJAP_CUR=\"WLessLEDS\",\"HelloWorldMP31\"\r\n");
 	uart_ok();
 
-	write_text("CONNECTED", 9);
+	write_text("BROKER...", 9);
+	alt_putstr("AT+CIPSTART=\"TCP\",\"192.168.1.102\",1883,7200\r\n");
+	uart_ok();
+
+
+	alt_putstr("AT+CIPSEND=14\r\n");
+	uart_ok();
+	alt_putchar(0x10);
+	alt_putchar(0x0D);
+	alt_putchar(0x00);
+	alt_putchar(0x04);
+	//MQTT
+	alt_putchar(0x4D);
+	alt_putchar(0x51);
+	alt_putchar(0x54);
+	alt_putchar(0x54);
+	alt_putchar(0x04);
+	alt_putchar(0x02);
+	alt_putchar(0xFF00);
+	//es
+	alt_putchar(0x65);
+	alt_putchar(0x73);
+	alt_putstr("\r\n");
+	uart_ok();
+
+	write_text("CONNECTED BROKER", 16);
 	usleep(2000000);
 }
 
