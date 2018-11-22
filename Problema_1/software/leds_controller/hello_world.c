@@ -155,6 +155,28 @@ void init_esp() {
 	usleep(2000000);
 }
 
+void publish(char* message) {
+	alt_putstr("AT+CIPSEND=24\r\n");
+	uart_ok();
+
+	// FIXED HEADER
+	alt_putchar(0x30);
+	// remaining length - 23
+	alt_putchar(0x17);
+
+	// VARIABLE HEADER
+	alt_putchar(0x00);
+	alt_putchar(0x0C);
+	alt_putstr("teste/teste0");
+
+	// PAYLOAD
+	// msg size is 9
+	alt_putstr(message);
+
+	alt_putstr("\r\n");
+	uart_ok();
+}
+
 int main() {
 	int outputs[] = {15, 23, 27, 29, 30};
 
@@ -198,6 +220,8 @@ int main() {
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, outputs[i]);
 			write_text(lcd_option_selected[i], 8);
 			selected = 1;
+
+			publish(lcd_options[i]);
 		} else if (in == 11) {
 			selected = 0;
 			//apaga todos os leds

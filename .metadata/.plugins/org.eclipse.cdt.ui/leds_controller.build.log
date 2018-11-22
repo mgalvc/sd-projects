@@ -1,9 +1,25 @@
-22:47:03 **** Incremental Build of configuration Nios II for project leds_controller ****
+13:34:18 **** Incremental Build of configuration Nios II for project leds_controller ****
 make all 
 Info: Building ../leds_controller_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
 [BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7724 Bytes program size (code + initialized data).
+Info:                       7936 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
 [leds_controller build complete]
 
-22:47:05 Build Finished (took 1s.591ms)
+13:34:35 Build Finished (took 17s.178ms)
 

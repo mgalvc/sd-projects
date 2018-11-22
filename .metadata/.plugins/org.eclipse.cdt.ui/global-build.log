@@ -19823,3 +19823,2212 @@ Info: Building ../leds_controller_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
 [BSP build complete]
 [leds_controller build complete]
+13:35:52 **** Clean-only build of configuration Nios II for project problem2_tests_bsp ****
+make clean 
+[BSP clean complete]
+13:36:07 **** Clean-only build of configuration Nios II for project problem2_tests ****
+make clean 
+[problem2_tests clean complete]
+13:56:07 **** Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O2 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o
+[BSP build complete]
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7092 Bytes program size (code + initialized data).
+Info:                       8568 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+13:56:33 **** Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+13:56:36 **** Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putcharbuf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putcharbuf.o HAL/src/alt_putcharbuf.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_uart_fd.o drivers/src/altera_avalon_uart_fd.c
+Compiling altera_avalon_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_uart_init.o drivers/src/altera_avalon_uart_init.c
+Compiling altera_avalon_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_uart_ioctl.o drivers/src/altera_avalon_uart_ioctl.c
+Compiling altera_avalon_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_uart_read.o drivers/src/altera_avalon_uart_read.c
+Compiling altera_avalon_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    '-Os' -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/drivers/src/altera_avalon_uart_write.o drivers/src/altera_avalon_uart_write.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../problem2_tests_bsp//HAL/inc -I../problem2_tests_bsp/ -I../problem2_tests_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c:3:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+main.c: In function 'enable':
+main.c:8:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+main.c: In function 'main':
+main.c:105:6: warning: unused variable 'outputs' [-Wunused-variable]
+  int outputs[] = {15, 23, 27, 29, 30};
+      ^
+Info: Linking problem2_tests.elf
+nios2-elf-g++  -T'../problem2_tests_bsp//linker.x' -msys-crt0='../problem2_tests_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../problem2_tests_bsp/  -msmallc  -Wl,-Map=problem2_tests.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o problem2_tests.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert problem2_tests.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --jdi ../..//output_files/Problem_1.jdi --sopcinfo C:/Projects/SD/Problema_1/software/problem2_tests_bsp/../../nios.sopcinfo
+Info: (problem2_tests.elf) 2288 Bytes program size (code + initialized data).
+Info:                      13 KBytes free for stack + heap.
+Info: Creating problem2_tests.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source problem2_tests.elf >problem2_tests.objdump
+[problem2_tests build complete]
+13:56:53 **** Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:00:10 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:03:01 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:03:03 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:03:05 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../problem2_tests_bsp//HAL/inc -I../problem2_tests_bsp/ -I../problem2_tests_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c:3:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+main.c: In function 'enable':
+main.c:8:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+main.c: In function 'main':
+main.c:106:6: warning: unused variable 'outputs' [-Wunused-variable]
+  int outputs[] = {15, 23, 27, 29, 30};
+      ^
+Info: Linking problem2_tests.elf
+nios2-elf-g++  -T'../problem2_tests_bsp//linker.x' -msys-crt0='../problem2_tests_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../problem2_tests_bsp/  -msmallc  -Wl,-Map=problem2_tests.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o problem2_tests.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert problem2_tests.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --jdi ../..//output_files/Problem_1.jdi --sopcinfo C:/Projects/SD/Problema_1/software/problem2_tests_bsp/../../nios.sopcinfo
+Info: (problem2_tests.elf) 2260 Bytes program size (code + initialized data).
+Info:                      13 KBytes free for stack + heap.
+Info: Creating problem2_tests.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source problem2_tests.elf >problem2_tests.objdump
+[problem2_tests build complete]
+14:03:08 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:03:23 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:03:55 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:05:42 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:05:45 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:05:47 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../problem2_tests_bsp//HAL/inc -I../problem2_tests_bsp/ -I../problem2_tests_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c:3:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+main.c: In function 'enable':
+main.c:8:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+main.c: In function 'main':
+main.c:106:6: warning: unused variable 'outputs' [-Wunused-variable]
+  int outputs[] = {15, 23, 27, 29, 30};
+      ^
+Info: Linking problem2_tests.elf
+nios2-elf-g++  -T'../problem2_tests_bsp//linker.x' -msys-crt0='../problem2_tests_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../problem2_tests_bsp/  -msmallc  -Wl,-Map=problem2_tests.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o problem2_tests.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert problem2_tests.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --jdi ../..//output_files/Problem_1.jdi --sopcinfo C:/Projects/SD/Problema_1/software/problem2_tests_bsp/../../nios.sopcinfo
+Info: (problem2_tests.elf) 2312 Bytes program size (code + initialized data).
+Info:                      13 KBytes free for stack + heap.
+Info: Creating problem2_tests.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source problem2_tests.elf >problem2_tests.objdump
+[problem2_tests build complete]
+14:05:50 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:05:57 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:06:57 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:08:28 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:08:30 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:08:32 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../problem2_tests_bsp//HAL/inc -I../problem2_tests_bsp/ -I../problem2_tests_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c:3:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+main.c: In function 'enable':
+main.c:8:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+main.c: In function 'main':
+main.c:95:6: warning: unused variable 'outputs' [-Wunused-variable]
+  int outputs[] = {15, 23, 27, 29, 30};
+      ^
+Info: Linking problem2_tests.elf
+nios2-elf-g++  -T'../problem2_tests_bsp//linker.x' -msys-crt0='../problem2_tests_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../problem2_tests_bsp/  -msmallc  -Wl,-Map=problem2_tests.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o problem2_tests.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert problem2_tests.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --jdi ../..//output_files/Problem_1.jdi --sopcinfo C:/Projects/SD/Problema_1/software/problem2_tests_bsp/../../nios.sopcinfo
+Info: (problem2_tests.elf) 2224 Bytes program size (code + initialized data).
+Info:                      13 KBytes free for stack + heap.
+Info: Creating problem2_tests.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source problem2_tests.elf >problem2_tests.objdump
+[problem2_tests build complete]
+14:08:35 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:08:46 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:09:04 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:19:23 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7096 Bytes program size (code + initialized data).
+Info:                       8564 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:19:44 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:19:46 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:19:49 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:20:39 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:21:18 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:59:50 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7100 Bytes program size (code + initialized data).
+Info:                       8560 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:59:54 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:59:56 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:59:57 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:00:23 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:00:25 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:00:26 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:00:28 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:00:35 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:01:00 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:31:20 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7192 Bytes program size (code + initialized data).
+Info:                       8468 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:31:35 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:31:37 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:31:39 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:34:08 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:34:48 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:38:44 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7220 Bytes program size (code + initialized data).
+Info:                       8440 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:38:48 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:38:50 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:38:51 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:38:55 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:39:44 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7220 Bytes program size (code + initialized data).
+Info:                       8440 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:39:48 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:39:50 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:39:52 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:39:56 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:41:08 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7240 Bytes program size (code + initialized data).
+Info:                       8420 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:41:11 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:41:13 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:41:15 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:41:20 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:42:10 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7244 Bytes program size (code + initialized data).
+Info:                       8416 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:42:14 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:42:15 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:42:17 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:42:21 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:44:58 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7276 Bytes program size (code + initialized data).
+Info:                       8384 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:45:02 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:45:04 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:45:06 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:45:09 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:51:33 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:134:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          0x04, "MQTT", 0x04, 0xC2, 0xFF00,
+                ^
+hello_world.c:134:16: note: (near initialization for 'connect_msg[3]')
+hello_world.c:134:36: warning: overflow in implicit constant conversion [-Woverflow]
+          0x04, "MQTT", 0x04, 0xC2, 0xFF00,
+                                    ^
+hello_world.c:135:10: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255};
+          ^
+hello_world.c:135:10: note: (near initialization for 'connect_msg[7]')
+hello_world.c:135:17: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255};
+                 ^
+hello_world.c:135:17: note: (near initialization for 'connect_msg[8]')
+hello_world.c:135:35: warning: integer constant is too large for its type
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255};
+                                   ^
+hello_world.c:135:35: warning: overflow in implicit constant conversion [-Woverflow]
+hello_world.c:133:7: warning: unused variable 'connect_msg' [-Wunused-variable]
+  char connect_msg[] = { 0x10, 0x22,
+       ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7396 Bytes program size (code + initialized data).
+Info:                       8264 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:51:37 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:51:39 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:51:40 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:52:28 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:134:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          0x04, "MQTT", 0x04, 0xC2, 0xFF00,
+                ^
+hello_world.c:134:16: note: (near initialization for 'connect_msg[3]')
+hello_world.c:134:36: warning: overflow in implicit constant conversion [-Woverflow]
+          0x04, "MQTT", 0x04, 0xC2, 0xFF00,
+                                    ^
+hello_world.c:135:10: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255,
+          ^
+hello_world.c:135:10: note: (near initialization for 'connect_msg[7]')
+hello_world.c:135:17: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255,
+                 ^
+hello_world.c:135:17: note: (near initialization for 'connect_msg[8]')
+hello_world.c:135:35: warning: integer constant is too large for its type
+          "mvl", "hvswyfmt", 0x0C, 0x48514264766833634B633255,
+                                   ^
+hello_world.c:135:35: warning: overflow in implicit constant conversion [-Woverflow]
+hello_world.c:136:10: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+          "\r\n" };
+          ^
+hello_world.c:136:10: note: (near initialization for 'connect_msg[11]')
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7368 Bytes program size (code + initialized data).
+Info:                       8292 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:52:32 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:52:34 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:52:35 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:52:55 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:02:45 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x10);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x22);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:138:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:140:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xC2);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:145:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0C);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:146:13: warning: integer constant is too large for its type
+  alt_putstr(0x48514264766833634B633255);
+             ^
+hello_world.c:146:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'long long int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7372 Bytes program size (code + initialized data).
+Info:                       8288 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:02:49 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:02:51 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:02:53 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:06:01 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x10);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x22);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:138:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:140:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xC2);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:145:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0C);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:146:13: warning: integer constant is too large for its type
+  alt_putstr(0x48514264766833634B633255);
+             ^
+hello_world.c:146:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'long long int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7372 Bytes program size (code + initialized data).
+Info:                       8288 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:06:04 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:06:06 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:06:08 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:06:16 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:07:48 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x10);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:138:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x22);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:139:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xC2);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:143:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:146:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0C);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:147:13: warning: integer constant is too large for its type
+  alt_putstr(0x48514264766833634B633255);
+             ^
+hello_world.c:147:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'long long int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7376 Bytes program size (code + initialized data).
+Info:                       8284 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:07:52 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:07:54 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:07:56 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:08:05 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:19:44 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0b00010000);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:138:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x22);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:139:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xC2);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:143:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:146:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0C);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:147:13: warning: integer constant is too large for its type
+  alt_putstr(0x48514264766833634B633255);
+             ^
+hello_world.c:147:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'long long int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7376 Bytes program size (code + initialized data).
+Info:                       8284 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:19:48 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:19:49 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:19:51 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:21:54 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0b00010000);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:138:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0b000000100010);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:139:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0b00000100);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xC2);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:143:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:146:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0C);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:147:13: warning: integer constant is too large for its type
+  alt_putstr(0x48514264766833634B633255);
+             ^
+hello_world.c:147:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'long long int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7376 Bytes program size (code + initialized data).
+Info:                       8284 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:21:58 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:22:00 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:22:01 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:22:12 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:07:37 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7448 Bytes program size (code + initialized data).
+Info:                       8212 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:07:58 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:08:01 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:08:04 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:10:50 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7448 Bytes program size (code + initialized data).
+Info:                       8212 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:10:55 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:10:57 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:10:59 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:11:51 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:12:29 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:31:55 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7448 Bytes program size (code + initialized data).
+Info:                       8212 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:32:00 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:32:02 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:32:04 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:32:09 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:37:34 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7448 Bytes program size (code + initialized data).
+Info:                       8212 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:37:39 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:37:42 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:37:44 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:37:56 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:37:58 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:38:00 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:38:02 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:38:06 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:48:09 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7452 Bytes program size (code + initialized data).
+Info:                       8208 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:48:14 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:48:16 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:48:18 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:48:28 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:50:37 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7452 Bytes program size (code + initialized data).
+Info:                       8208 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:50:42 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:50:44 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:50:46 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:50:49 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:50:55 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7436 Bytes program size (code + initialized data).
+Info:                       8224 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:51:02 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:51:05 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:51:07 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:51:14 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:56:38 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7436 Bytes program size (code + initialized data).
+Info:                       8224 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:56:43 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:56:45 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:56:47 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+14:57:16 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:58:02 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+14:58:51 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:14: warning: passing argument 1 of 'alt_putchar' makes integer from pointer without a cast [-Wint-conversion]
+  alt_putchar("a");
+              ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:54:5: note: expected 'int' but argument is of type 'char *'
+ int alt_putchar(int c);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7452 Bytes program size (code + initialized data).
+Info:                       8208 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+14:58:56 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+14:58:58 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+14:59:00 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:02:09 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7264 Bytes program size (code + initialized data).
+Info:                       8396 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:02:14 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:02:16 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:02:18 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:45:07 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+hello_world.c: In function 'init_esp':
+hello_world.c:136:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x10);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:137:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x0D);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:139:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:141:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x04);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:142:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0x02);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world.c:143:13: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+  alt_putstr(0xFF00);
+             ^
+In file included from hello_world.c:19:0:
+../leds_controller_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7340 Bytes program size (code + initialized data).
+Info:                       8320 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:45:12 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:45:14 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:45:16 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:45:22 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:46:56 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7524 Bytes program size (code + initialized data).
+Info:                       8136 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:47:01 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:47:03 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:47:05 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:47:47 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+15:51:33 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7536 Bytes program size (code + initialized data).
+Info:                       8124 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+15:51:38 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+15:51:40 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+15:51:42 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+15:51:47 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+16:17:12 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7536 Bytes program size (code + initialized data).
+Info:                       8124 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+16:17:30 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+16:17:33 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+16:17:36 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
+16:17:42 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+16:21:00 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+[leds_controller build complete]
+13:34:18 **** Incremental Build of configuration Nios II for project leds_controller ****
+make all 
+Info: Building ../leds_controller_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_controller_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_controller_bsp//HAL/inc -I../leds_controller_bsp/ -I../leds_controller_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c:19:27: warning: extra tokens at end of #include directive
+ #include "sys/alt_stdio.h";
+                           ^
+hello_world.c: In function 'enable':
+hello_world.c:24:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(200);
+  ^
+Info: Linking leds_controller.elf
+nios2-elf-g++  -T'../leds_controller_bsp//linker.x' -msys-crt0='../leds_controller_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_controller_bsp/  -msmallc  -Wl,-Map=leds_controller.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o leds_controller.elf obj/default/hello_world.o -lm 
+nios2-elf-insert leds_controller.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev uart --stdin_dev uart --stdout_dev uart --sopc_system_name nios --quartus_project_dir "C:/Projects/SD/Problema_1" --sopcinfo C:/Projects/SD/Problema_1/nios.sopcinfo
+Info: (leds_controller.elf) 7724 Bytes program size (code + initialized data).
+Info:                       7936 Bytes free for stack + heap.
+Info: Creating leds_controller.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds_controller.elf >leds_controller.objdump
+[leds_controller build complete]
+13:34:39 **** Incremental Build of configuration Nios II for project leds_controller_bsp ****
+make all 
+[BSP build complete]
+13:34:41 **** Incremental Build of configuration Nios II for project problem2_tests ****
+make all 
+Info: Building ../problem2_tests_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../problem2_tests_bsp/
+[BSP build complete]
+[problem2_tests build complete]
+13:34:44 **** Incremental Build of configuration Nios II for project problem2_tests_bsp ****
+make all 
+[BSP build complete]
