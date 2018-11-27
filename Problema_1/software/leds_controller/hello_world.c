@@ -1,19 +1,3 @@
-/*
- * "Hello World" example.
- *
- * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
- * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
- * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
- * device in your system's hardware.
- * The memory footprint of this hosted application is ~69 kbytes by default
- * using the standard reference design.
- *
- * For a reduced footprint version of this template, and an explanation of how
- * to reduce the memory footprint for a given application, see the
- * "small_hello_world" template.
- *
- */
-
 #include "altera_avalon_pio_regs.h"
 #include "system.h"
 #include "sys/alt_stdio.h";
@@ -108,7 +92,6 @@ unsigned int uart_ok() {
 		}
 	}
 }
-
 void init_esp() {
 	write_text("WAITING...", 10);
 
@@ -127,27 +110,13 @@ void init_esp() {
 	uart_ok();
 
 	write_text("BROKER...", 9);
-	alt_putstr("AT+CIPSTART=\"TCP\",\"192.168.1.102\",1883,7200\r\n");
+	alt_putstr("AT+CIPSTART=\"TCP\",\"192.168.1.103\",1883,7200\r\n");
 	uart_ok();
 
-
-	alt_putstr("AT+CIPSEND=14\r\n");
+	alt_putstr("AT+CIPSEND=15\r\n");
 	uart_ok();
-	alt_putchar(0x10);
-	alt_putchar(0x0D);
-	alt_putchar(0x00);
-	alt_putchar(0x04);
-	//MQTT
-	alt_putchar(0x4D);
-	alt_putchar(0x51);
-	alt_putchar(0x54);
-	alt_putchar(0x54);
-	alt_putchar(0x04);
-	alt_putchar(0x02);
-	alt_putchar(0xFF00);
-	//es
-	alt_putchar(0x65);
-	alt_putchar(0x73);
+	char connect[] = { 0x10, 0x0d, 0x00, 0x04, 0x4d, 0x51, 0x54, 0x54, 0x04, 0x02, 0x00, 0x3c, 0x00, 0x01, 0x78 };
+	sendATCommand(connect, 15);
 	alt_putstr("\r\n");
 	uart_ok();
 
@@ -155,23 +124,53 @@ void init_esp() {
 	usleep(2000000);
 }
 
-void publish(char* message) {
-	alt_putstr("AT+CIPSEND=24\r\n");
+void publish(int index) {
+	char publish_A[] = {
+			  0x30, 0x0f, 0x00, 0x0c, 0x74, 0x65, 0x73, 0x74,
+			  0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31,
+			  0x41
+			};
+	char publish_B[] = {
+			  0x30, 0x0f, 0x00, 0x0c, 0x74, 0x65, 0x73, 0x74,
+			  0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31,
+			  0x42
+			};
+	char publish_C[] = {
+			  0x30, 0x0f, 0x00, 0x0c, 0x74, 0x65, 0x73, 0x74,
+			  0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31,
+			  0x43
+			};
+	char publish_D[] = {
+			  0x30, 0x0f, 0x00, 0x0c, 0x74, 0x65, 0x73, 0x74,
+			  0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31,
+			  0x44
+			};
+	char publish_E[] = {
+			  0x30, 0x0f, 0x00, 0x0c, 0x74, 0x65, 0x73, 0x74,
+			  0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31,
+			  0x45
+			};
+
+	alt_putstr("AT+CIPSEND=17\r\n");
 	uart_ok();
 
-	// FIXED HEADER
-	alt_putchar(0x30);
-	// remaining length - 23
-	alt_putchar(0x17);
-
-	// VARIABLE HEADER
-	alt_putchar(0x00);
-	alt_putchar(0x0C);
-	alt_putstr("teste/teste0");
-
-	// PAYLOAD
-	// msg size is 9
-	alt_putstr(message);
+	switch(index) {
+		case 0:
+			sendATCommand(publish_A, 17);
+			break;
+		case 1:
+			sendATCommand(publish_B, 17);
+			break;
+		case 2:
+			sendATCommand(publish_C, 17);
+			break;
+		case 3:
+			sendATCommand(publish_D, 17);
+			break;
+		case 4:
+			sendATCommand(publish_E, 17);
+			break;
+	}
 
 	alt_putstr("\r\n");
 	uart_ok();
@@ -215,13 +214,13 @@ int main() {
 			i++;
 		} else if (in == 14 && !selected) {
 			i--;
-		} else if (in == 7) {
+		} else if (in == 7 && !selected) {
 			// seleciona
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, outputs[i]);
 			write_text(lcd_option_selected[i], 8);
 			selected = 1;
 
-			publish(lcd_options[i]);
+			publish(i);
 		} else if (in == 11) {
 			selected = 0;
 			//apaga todos os leds

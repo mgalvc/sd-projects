@@ -123,15 +123,58 @@ void init_esp() {
 	uart_ok();
 
 	write_text("WIFI...", 7);
-	alt_putstr("AT+CWJAP_CUR=\"digito\",\"tjmf010510\"\r\n");
+	alt_putstr("AT+CWJAP_CUR=\"WLessLEDS\",\"HelloWorldMP31\"\r\n");
 	uart_ok();
 
 	write_text("BROKER...", 9);
-	alt_putstr("AT+CIPSTART=\"TCP\",\"m15.cloudmqtt.com\",35656\r\n");
+	alt_putstr("AT+CIPSTART=\"TCP\",\"192.168.1.102\",1883,7200\r\n");
+	uart_ok();
+
+
+	alt_putstr("AT+CIPSEND=14\r\n");
+	uart_ok();
+	alt_putchar(0x10);
+	alt_putchar(0x0D);
+	alt_putchar(0x00);
+	alt_putchar(0x04);
+	//MQTT
+	alt_putchar(0x4D);
+	alt_putchar(0x51);
+	alt_putchar(0x54);
+	alt_putchar(0x54);
+	alt_putchar(0x04);
+	alt_putchar(0x02);
+	alt_putchar(0xFF00);
+	//es
+	alt_putchar(0x65);
+	alt_putchar(0x73);
+	alt_putstr("\r\n");
 	uart_ok();
 
 	write_text("CONNECTED BROKER", 16);
 	usleep(2000000);
+}
+
+void publish(char* message) {
+	alt_putstr("AT+CIPSEND=24\r\n");
+	uart_ok();
+
+	// FIXED HEADER
+	alt_putchar(0x30);
+	// remaining length - 23
+	alt_putchar(0x17);
+
+	// VARIABLE HEADER
+	alt_putchar(0x00);
+	alt_putchar(0x0C);
+	alt_putstr("teste/teste0");
+
+	// PAYLOAD
+	// msg size is 9
+	alt_putstr(message);
+
+	alt_putstr("\r\n");
+	uart_ok();
 }
 
 int main() {
@@ -177,6 +220,8 @@ int main() {
 			IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE, outputs[i]);
 			write_text(lcd_option_selected[i], 8);
 			selected = 1;
+
+			publish(lcd_options[i]);
 		} else if (in == 11) {
 			selected = 0;
 			//apaga todos os leds
