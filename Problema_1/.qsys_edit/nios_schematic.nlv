@@ -14,17 +14,17 @@ preplace inst nios.buttons -pg 1 -lvl 5 -y 440
 preplace inst nios.LCD_EN -pg 1 -lvl 5 -y 150
 preplace inst nios.nios2.cpu -pg 1
 preplace inst nios.nios2.clock_bridge -pg 1
-preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)clock.clk_in,(SLAVE)nios.clk) 1 0 1 NJ
 preplace netloc POINT_TO_POINT<net_container>nios</net_container>(SLAVE)uart.irq,(MASTER)nios2.irq) 1 4 1 1700
-preplace netloc FAN_OUT<net_container>nios</net_container>(SLAVE)LCD_DATA.clk,(SLAVE)LCD_RW.clk,(SLAVE)buttons.clk,(SLAVE)nios2.clk,(SLAVE)uart.clk,(SLAVE)LCD_RS.clk,(SLAVE)memory.clk1,(SLAVE)leds.clk,(SLAVE)LCD_EN.clk,(MASTER)clock.clk) 1 1 4 NJ 450 NJ 450 960 330 1720
+preplace netloc FAN_OUT<net_container>nios</net_container>(SLAVE)memory.clk1,(MASTER)clock.clk,(SLAVE)LCD_DATA.clk,(SLAVE)LCD_RW.clk,(SLAVE)nios2.clk,(SLAVE)LCD_RS.clk,(SLAVE)LCD_EN.clk,(SLAVE)buttons.clk,(SLAVE)leds.clk,(SLAVE)uart.clk) 1 1 4 NJ 450 NJ 450 960 330 1720
+preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.uart,(SLAVE)uart.external_connection) 1 0 5 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc INTERCONNECT<net_container>nios</net_container>(MASTER)clock.clk_reset,(SLAVE)LCD_EN.reset,(SLAVE)uart.reset,(SLAVE)memory.reset1,(SLAVE)clock.clk_in_reset,(SLAVE)buttons.reset,(SLAVE)LCD_RS.reset,(SLAVE)nios2.reset,(SLAVE)LCD_DATA.reset,(SLAVE)leds.reset,(MASTER)nios2.debug_reset_request,(SLAVE)LCD_RW.reset) 1 0 5 150 430 350 470 NJ 470 980 370 1680
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)LCD_DATA.external_connection,(SLAVE)nios.data) 1 0 5 NJ 60 NJ 60 NJ 60 NJ 60 NJ
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.buttons_connection,(SLAVE)buttons.external_connection) 1 0 5 NJ 410 NJ 410 NJ 410 NJ 410 NJ
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.leds_connection,(SLAVE)leds.external_connection) 1 0 5 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)LCD_RS.external_connection,(SLAVE)nios.rs) 1 0 5 NJ 350 NJ 350 NJ 350 NJ 350 NJ
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.en,(SLAVE)LCD_EN.external_connection) 1 0 5 NJ 170 NJ 170 NJ 180 NJ 180 N
-preplace netloc INTERCONNECT<net_container>nios</net_container>(MASTER)nios2.debug_reset_request,(SLAVE)LCD_EN.reset,(SLAVE)nios2.reset,(SLAVE)leds.reset,(MASTER)clock.clk_reset,(SLAVE)LCD_RS.reset,(SLAVE)memory.reset1,(SLAVE)LCD_RW.reset,(SLAVE)clock.clk_in_reset,(SLAVE)buttons.reset,(SLAVE)LCD_DATA.reset,(SLAVE)uart.reset) 1 0 5 150 430 350 470 NJ 470 980 370 1680
-preplace netloc INTERCONNECT<net_container>nios</net_container>(MASTER)nios2.data_master,(SLAVE)buttons.s1,(SLAVE)LCD_DATA.s1,(SLAVE)LCD_EN.s1,(SLAVE)memory.s1,(MASTER)nios2.instruction_master,(SLAVE)nios2.debug_mem_slave,(SLAVE)leds.s1,(SLAVE)LCD_RS.s1,(SLAVE)LCD_RW.s1,(SLAVE)uart.s1) 1 3 2 1000 390 1660
-preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)uart.external_connection,(SLAVE)nios.uart) 1 0 5 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.clk,(SLAVE)clock.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)memory.s1,(SLAVE)buttons.s1,(MASTER)nios2.instruction_master,(SLAVE)LCD_RW.s1,(SLAVE)LCD_RS.s1,(SLAVE)leds.s1,(SLAVE)LCD_EN.s1,(SLAVE)uart.s1,(SLAVE)nios2.debug_mem_slave,(SLAVE)LCD_DATA.s1,(MASTER)nios2.data_master) 1 3 2 1000 390 1660
 preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.rw,(SLAVE)LCD_RW.external_connection) 1 0 5 NJ 790 NJ 790 NJ 790 NJ 790 NJ
 levelinfo -pg 1 0 120 2190
 levelinfo -hier nios 130 180 510 940 1400 1940 2160 2180

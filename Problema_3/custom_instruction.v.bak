@@ -1,0 +1,10 @@
+module Custom_Instruction (
+	dataa,
+	result
+);
+
+input dataa;
+output result;
+
+
+endmodule

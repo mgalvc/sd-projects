@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -123,6 +123,7 @@ wire             D_op_addi;
 wire             D_op_and;
 wire             D_op_andhi;
 wire             D_op_andi;
+wire             D_op_arbiter_0;
 wire             D_op_beq;
 wire             D_op_bge;
 wire             D_op_bgeu;
@@ -420,6 +421,7 @@ wire             test_has_ended;
   assign D_op_intr = (D_iw_opx == 61) & D_is_opx_inst;
   assign D_op_crst = (D_iw_opx == 62) & D_is_opx_inst;
   assign D_op_opx_rsv63 = (D_iw_opx == 63) & D_is_opx_inst;
+  assign D_op_arbiter_0 = D_op_custom & 1'b1;
   assign D_is_opx_inst = D_iw_op == 58;
   assign test_has_ended = 1'b0;
 

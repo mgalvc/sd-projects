@@ -1,0 +1,27 @@
+module arbiter(
+	input datain,
+	input rx,
+	input clk,
+	output tx,
+	output rxdata	
+	
+);
+
+	reg enable;
+
+
+	    wire tx_busy;//output
+	    wire rdy;
+	    wire rdy_clr;
+
+	uart U(.din(datain),
+	       .wr_en(enable),
+	       .clk_50m(clk),
+	       .tx(),
+	       .tx_busy(tx_busy),
+	       .rx(),
+	       .rdy(rdy),
+	       .rdy_clr(rdy_clr),
+	       .dout(rxdata)));
+
+endmodule;

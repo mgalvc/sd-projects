@@ -1,0 +1,14 @@
+module Component (
+	dataa,
+	result
+);
+
+input dataa;
+output result;
+output reg led;
+
+assign result = led;
+assign led = 0;
+
+endmodule
+

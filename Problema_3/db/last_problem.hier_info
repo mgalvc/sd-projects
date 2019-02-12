@@ -1,0 +1,11 @@
+|custom_instruction
+dataa => dataa.IN1
+result <= Component:component.result
+
+
+|custom_instruction|Component:component
+dataa => ~NO_FANOUT~
+result <= <GND>
+led <= <GND>
+
+

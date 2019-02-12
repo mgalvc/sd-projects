@@ -8,7 +8,9 @@ module nios (
 	rs_export,
 	rw_export,
 	uart_rxd,
-	uart_txd);	
+	uart_txd,
+	arbiter_conduit_writeresponsevalid_n,
+	arbiter_conduit_beginbursttransfer);	
 
 	input	[3:0]	buttons_connection_export;
 	input		clk_clk;
@@ -19,4 +21,6 @@ module nios (
 	output		rw_export;
 	input		uart_rxd;
 	output		uart_txd;
+	output		arbiter_conduit_writeresponsevalid_n;
+	input		arbiter_conduit_beginbursttransfer;
 endmodule

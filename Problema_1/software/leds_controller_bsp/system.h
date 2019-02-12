@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios'
  * SOPC Builder design path: C:/Projects/SD/Problema_1/nios.sopcinfo
  *
- * Generated: Wed Oct 31 15:40:29 BRT 2018
+ * Generated: Tue Feb 12 14:30:28 BRT 2019
  */
 
 /*
@@ -129,6 +129,15 @@
 
 
 /*
+ * Custom instruction macros
+ *
+ */
+
+#define ALT_CI_ARBITER_0(A,B) __builtin_custom_inii(ALT_CI_ARBITER_0_N,(A),(B))
+#define ALT_CI_ARBITER_0_N 0x0
+
+
+/*
  * Define for each module class mastered by the CPU
  *
  */
@@ -137,6 +146,7 @@
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2_GEN2
+#define __ARBITER
 
 
 /*
