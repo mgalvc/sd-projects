@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "arbiter_conduit_writeresponsevalid_n",
+					"strict" : false
+				},
+				{
 					"name" : "data_export[0]",
 					"strict" : false
 				},
@@ -68,7 +72,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "uart_txd",
+					"strict" : false
+				},
+				{
 					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "arbiter_conduit_beginbursttransfer",
 					"strict" : false
 				},
 				{
@@ -80,15 +92,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "buttons_connection_export[2]",
-					"strict" : false
-				},
-				{
 					"name" : "buttons_connection_export[3]",
 					"strict" : false
 				},
 				{
-					"name" : "reset_reset_n",
+					"name" : "buttons_connection_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rxd",
 					"strict" : false
 				},
 				{

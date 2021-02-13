@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -80,7 +80,7 @@ module nios_nios2_cpu_test_bench (
   input   [  3: 0] E_mem_byte_en;
   input   [ 31: 0] E_st_data;
   input            E_valid;
-  input   [ 13: 0] F_pcb;
+  input   [ 14: 0] F_pcb;
   input            F_valid;
   input            R_ctrl_break;
   input            R_ctrl_exception;
@@ -96,7 +96,7 @@ module nios_nios2_cpu_test_bench (
   input            W_estatus_reg;
   input   [ 31: 0] W_ienable_reg;
   input   [ 31: 0] W_ipending_reg;
-  input   [ 13: 0] W_mem_baddr;
+  input   [ 14: 0] W_mem_baddr;
   input            W_rf_ecc_unrecoverable_valid;
   input            W_rf_ecc_valid_any;
   input   [ 31: 0] W_rf_wr_data;
@@ -106,11 +106,11 @@ module nios_nios2_cpu_test_bench (
   input   [ 31: 0] W_wr_data;
   input   [ 31: 0] av_ld_data_aligned_unfiltered;
   input            clk;
-  input   [ 13: 0] d_address;
+  input   [ 14: 0] d_address;
   input   [  3: 0] d_byteenable;
   input            d_read;
   input            d_write;
-  input   [ 13: 0] i_address;
+  input   [ 14: 0] i_address;
   input            i_read;
   input   [ 31: 0] i_readdata;
   input            i_waitrequest;
@@ -123,6 +123,7 @@ wire             D_op_addi;
 wire             D_op_and;
 wire             D_op_andhi;
 wire             D_op_andi;
+wire             D_op_arbiter_0;
 wire             D_op_beq;
 wire             D_op_bge;
 wire             D_op_bgeu;
@@ -420,6 +421,7 @@ wire             test_has_ended;
   assign D_op_intr = (D_iw_opx == 61) & D_is_opx_inst;
   assign D_op_crst = (D_iw_opx == 62) & D_is_opx_inst;
   assign D_op_opx_rsv63 = (D_iw_opx == 63) & D_is_opx_inst;
+  assign D_op_arbiter_0 = D_op_custom & 1'b1;
   assign D_is_opx_inst = D_iw_op == 58;
   assign test_has_ended = 1'b0;
 

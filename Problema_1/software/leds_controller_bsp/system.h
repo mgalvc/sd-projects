@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios'
  * SOPC Builder design path: C:/Projects/SD/Problema_1/nios.sopcinfo
  *
- * Generated: Sat Oct 13 11:25:54 BRT 2018
+ * Generated: Tue Feb 12 14:30:28 BRT 2019
  */
 
 /*
@@ -62,13 +62,13 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_gen2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00002820
+#define ALT_CPU_BREAK_ADDR 0x00004820
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
 #define ALT_CPU_CPU_IMPLEMENTATION "tiny"
-#define ALT_CPU_DATA_ADDR_WIDTH 0xe
+#define ALT_CPU_DATA_ADDR_WIDTH 0xf
 #define ALT_CPU_DCACHE_LINE_SIZE 0
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_DCACHE_SIZE 0
@@ -87,7 +87,7 @@
 #define ALT_CPU_ICACHE_LINE_SIZE 0
 #define ALT_CPU_ICACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_ICACHE_SIZE 0
-#define ALT_CPU_INST_ADDR_WIDTH 0xe
+#define ALT_CPU_INST_ADDR_WIDTH 0xf
 #define ALT_CPU_NAME "nios2"
 #define ALT_CPU_OCI_VERSION 1
 #define ALT_CPU_RESET_ADDR 0x00000000
@@ -99,13 +99,13 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00002820
+#define NIOS2_BREAK_ADDR 0x00004820
 #define NIOS2_CPU_ARCH_NIOS2_R1
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
 #define NIOS2_CPU_IMPLEMENTATION "tiny"
-#define NIOS2_DATA_ADDR_WIDTH 0xe
+#define NIOS2_DATA_ADDR_WIDTH 0xf
 #define NIOS2_DCACHE_LINE_SIZE 0
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 0
 #define NIOS2_DCACHE_SIZE 0
@@ -123,9 +123,18 @@
 #define NIOS2_ICACHE_LINE_SIZE 0
 #define NIOS2_ICACHE_LINE_SIZE_LOG2 0
 #define NIOS2_ICACHE_SIZE 0
-#define NIOS2_INST_ADDR_WIDTH 0xe
+#define NIOS2_INST_ADDR_WIDTH 0xf
 #define NIOS2_OCI_VERSION 1
 #define NIOS2_RESET_ADDR 0x00000000
+
+
+/*
+ * Custom instruction macros
+ *
+ */
+
+#define ALT_CI_ARBITER_0(A,B) __builtin_custom_inii(ALT_CI_ARBITER_0_N,(A),(B))
+#define ALT_CI_ARBITER_0_N 0x0
 
 
 /*
@@ -133,10 +142,11 @@
  *
  */
 
-#define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2_GEN2
+#define __ARBITER
 
 
 /*
@@ -145,7 +155,7 @@
  */
 
 #define ALT_MODULE_CLASS_LCD_DATA altera_avalon_pio
-#define LCD_DATA_BASE 0x3030
+#define LCD_DATA_BASE 0x50a0
 #define LCD_DATA_BIT_CLEARING_EDGE_REGISTER 0
 #define LCD_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LCD_DATA_CAPTURE 0
@@ -172,7 +182,7 @@
  */
 
 #define ALT_MODULE_CLASS_LCD_EN altera_avalon_pio
-#define LCD_EN_BASE 0x3000
+#define LCD_EN_BASE 0x50d0
 #define LCD_EN_BIT_CLEARING_EDGE_REGISTER 0
 #define LCD_EN_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LCD_EN_CAPTURE 0
@@ -199,7 +209,7 @@
  */
 
 #define ALT_MODULE_CLASS_LCD_RS altera_avalon_pio
-#define LCD_RS_BASE 0x3020
+#define LCD_RS_BASE 0x50b0
 #define LCD_RS_BIT_CLEARING_EDGE_REGISTER 0
 #define LCD_RS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LCD_RS_CAPTURE 0
@@ -226,7 +236,7 @@
  */
 
 #define ALT_MODULE_CLASS_LCD_RW altera_avalon_pio
-#define LCD_RW_BASE 0x3010
+#define LCD_RW_BASE 0x50c0
 #define LCD_RW_BIT_CLEARING_EDGE_REGISTER 0
 #define LCD_RW_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LCD_RW_CAPTURE 0
@@ -262,24 +272,24 @@
 #define ALT_NUM_EXTERNAL_INTERRUPT_CONTROLLERS 0
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
-#define ALT_STDERR "/dev/jtag"
-#define ALT_STDERR_BASE 0x3060
-#define ALT_STDERR_DEV jtag
-#define ALT_STDERR_IS_JTAG_UART
+#define ALT_STDERR "/dev/uart"
+#define ALT_STDERR_BASE 0x5000
+#define ALT_STDERR_DEV uart
+#define ALT_STDERR_IS_UART
 #define ALT_STDERR_PRESENT
-#define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDIN "/dev/jtag"
-#define ALT_STDIN_BASE 0x3060
-#define ALT_STDIN_DEV jtag
-#define ALT_STDIN_IS_JTAG_UART
+#define ALT_STDERR_TYPE "altera_avalon_uart"
+#define ALT_STDIN "/dev/uart"
+#define ALT_STDIN_BASE 0x5000
+#define ALT_STDIN_DEV uart
+#define ALT_STDIN_IS_UART
 #define ALT_STDIN_PRESENT
-#define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/jtag"
-#define ALT_STDOUT_BASE 0x3060
-#define ALT_STDOUT_DEV jtag
-#define ALT_STDOUT_IS_JTAG_UART
+#define ALT_STDIN_TYPE "altera_avalon_uart"
+#define ALT_STDOUT "/dev/uart"
+#define ALT_STDOUT_BASE 0x5000
+#define ALT_STDOUT_DEV uart
+#define ALT_STDOUT_IS_UART
 #define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
+#define ALT_STDOUT_TYPE "altera_avalon_uart"
 #define ALT_SYSTEM_NAME "nios"
 
 
@@ -289,7 +299,7 @@
  */
 
 #define ALT_MODULE_CLASS_buttons altera_avalon_pio
-#define BUTTONS_BASE 0x3050
+#define BUTTONS_BASE 0x5080
 #define BUTTONS_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTONS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUTTONS_CAPTURE 0
@@ -321,30 +331,12 @@
 
 
 /*
- * jtag configuration
- *
- */
-
-#define ALT_MODULE_CLASS_jtag altera_avalon_jtag_uart
-#define JTAG_BASE 0x3060
-#define JTAG_IRQ 0
-#define JTAG_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define JTAG_NAME "/dev/jtag"
-#define JTAG_READ_DEPTH 64
-#define JTAG_READ_THRESHOLD 8
-#define JTAG_SPAN 8
-#define JTAG_TYPE "altera_avalon_jtag_uart"
-#define JTAG_WRITE_DEPTH 64
-#define JTAG_WRITE_THRESHOLD 8
-
-
-/*
  * leds configuration
  *
  */
 
 #define ALT_MODULE_CLASS_leds altera_avalon_pio
-#define LEDS_BASE 0x3040
+#define LEDS_BASE 0x5090
 #define LEDS_BIT_CLEARING_EDGE_REGISTER 0
 #define LEDS_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LEDS_CAPTURE 0
@@ -388,9 +380,34 @@
 #define MEMORY_READ_DURING_WRITE_MODE "DONT_CARE"
 #define MEMORY_SINGLE_CLOCK_OP 0
 #define MEMORY_SIZE_MULTIPLE 1
-#define MEMORY_SIZE_VALUE 8192
-#define MEMORY_SPAN 8192
+#define MEMORY_SIZE_VALUE 16384
+#define MEMORY_SPAN 16384
 #define MEMORY_TYPE "altera_avalon_onchip_memory2"
 #define MEMORY_WRITABLE 1
+
+
+/*
+ * uart configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_uart altera_avalon_uart
+#define UART_BASE 0x5000
+#define UART_BAUD 115200
+#define UART_DATA_BITS 8
+#define UART_FIXED_BAUD 1
+#define UART_FREQ 50000000
+#define UART_IRQ 0
+#define UART_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define UART_NAME "/dev/uart"
+#define UART_PARITY 'N'
+#define UART_SIM_CHAR_STREAM ""
+#define UART_SIM_TRUE_BAUD 0
+#define UART_SPAN 32
+#define UART_STOP_BITS 1
+#define UART_SYNC_REG_DEPTH 2
+#define UART_TYPE "altera_avalon_uart"
+#define UART_USE_CTS_RTS 0
+#define UART_USE_EOP_REGISTER 0
 
 #endif /* __SYSTEM_H_ */

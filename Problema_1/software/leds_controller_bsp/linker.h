@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios'
  * SOPC Builder design path: C:/Projects/SD/Problema_1/nios.sopcinfo
  *
- * Generated: Thu Sep 27 16:11:17 AMT 2018
+ * Generated: Fri Feb 08 17:21:31 BRT 2019
  */
 
 /*
@@ -66,7 +66,7 @@
  */
 
 #define MEMORY_REGION_BASE 0x20
-#define MEMORY_REGION_SPAN 8160
+#define MEMORY_REGION_SPAN 16352
 #define RESET_REGION_BASE 0x0
 #define RESET_REGION_SPAN 32
 

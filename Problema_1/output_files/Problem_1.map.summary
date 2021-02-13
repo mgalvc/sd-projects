@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Oct 15 17:50:25 2018
+Analysis & Synthesis Status : Failed - Mon Feb 11 10:45:40 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Problem_1
-Top-level Entity Name : nios
+Top-level Entity Name : uart
 Family : Cyclone IV E
-Total logic elements : 1,785
-    Total combinational functions : 1,599
-    Dedicated logic registers : 940
-Total registers : 940
-Total pins : 22
-Total virtual pins : 0
-Total memory bits : 76,800
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

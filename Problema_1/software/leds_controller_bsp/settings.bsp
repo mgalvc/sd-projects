@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>15/10/2018 17:52:09</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1539636729147</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>12/02/2019 15:03:03</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1549994583471</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Projects\SD\Problema_1\software\leds_controller_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Projects\SD\Problema_1\nios.sopcinfo</SopcDesignFile>
@@ -194,7 +194,7 @@
                 <SettingName>hal.stdin</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag</Value>
+                <Value>uart</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDIN character-mode device. This setting is used by the ALT_STDIN family of defines in system.h.</Description>
@@ -206,7 +206,7 @@
                 <SettingName>hal.stdout</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag</Value>
+                <Value>uart</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDOUT character-mode device. This setting is used by the ALT_STDOUT family of defines in system.h.</Description>
@@ -218,7 +218,7 @@
                 <SettingName>hal.stderr</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag</Value>
+                <Value>uart</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDERR character-mode device. This setting is used by the ALT_STDERR family of defines in system.h.</Description>
@@ -875,8 +875,8 @@
                 <Group>none</Group>
         </Setting>
         <Setting>
-                <SettingName>altera_avalon_jtag_uart_driver.enable_small_driver</SettingName>
-                <Identifier>ALTERA_AVALON_JTAG_UART_SMALL</Identifier>
+                <SettingName>altera_avalon_uart_driver.enable_small_driver</SettingName>
+                <Identifier>ALTERA_AVALON_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
                 <Value>false</Value>
                 <DefaultValue>false</DefaultValue>
@@ -887,64 +887,64 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <Setting>
-                <SettingName>altera_avalon_jtag_uart_driver.enable_jtag_uart_ignore_fifo_full_error</SettingName>
-                <Identifier>ALTERA_AVALON_JTAG_UART_IGNORE_FIFO_FULL_ERROR</Identifier>
+                <SettingName>altera_avalon_uart_driver.enable_ioctl</SettingName>
+                <Identifier>ALTERA_AVALON_UART_USE_IOCTL</Identifier>
                 <Type>BooleanDefineOnly</Type>
                 <Value>false</Value>
                 <DefaultValue>false</DefaultValue>
                 <DestinationFile>public_mk_define</DestinationFile>
-                <Description>Enable JTAG UART driver to recover when host is inactive causing buffer to full without returning error. Printf will not fail with this recovery.</Description>
+                <Description>Enable driver ioctl() support. This feature is not compatible with the 'small' driver; ioctl() support will not be compiled if either the UART 'enable_small_driver' or HAL 'enable_reduced_device_drivers' settings are enabled.</Description>
                 <Restrictions>none</Restrictions>
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>memory</slaveDescriptor>
-                <addressRange>0x00000000 - 0x00001FFF</addressRange>
-                <addressSpan>8192</addressSpan>
+                <addressRange>0x00000000 - 0x00003FFF</addressRange>
+                <addressSpan>16384</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>LCD_EN</slaveDescriptor>
-                <addressRange>0x00003000 - 0x0000300F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
+                <slaveDescriptor>uart</slaveDescriptor>
+                <addressRange>0x00005000 - 0x0000501F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>LCD_RW</slaveDescriptor>
-                <addressRange>0x00003010 - 0x0000301F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>LCD_RS</slaveDescriptor>
-                <addressRange>0x00003020 - 0x0000302F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>LCD_DATA</slaveDescriptor>
-                <addressRange>0x00003030 - 0x0000303F</addressRange>
+                <slaveDescriptor>buttons</slaveDescriptor>
+                <addressRange>0x00005080 - 0x0000508F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>leds</slaveDescriptor>
-                <addressRange>0x00003040 - 0x0000304F</addressRange>
+                <addressRange>0x00005090 - 0x0000509F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>buttons</slaveDescriptor>
-                <addressRange>0x00003050 - 0x0000305F</addressRange>
+                <slaveDescriptor>LCD_DATA</slaveDescriptor>
+                <addressRange>0x000050A0 - 0x000050AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>jtag</slaveDescriptor>
-                <addressRange>0x00003060 - 0x00003067</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes>printable</attributes>
+                <slaveDescriptor>LCD_RS</slaveDescriptor>
+                <addressRange>0x000050B0 - 0x000050BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>LCD_RW</slaveDescriptor>
+                <addressRange>0x000050C0 - 0x000050CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>LCD_EN</slaveDescriptor>
+                <addressRange>0x000050D0 - 0x000050DF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>

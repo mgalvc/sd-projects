@@ -1,0 +1,15 @@
+module custom (
+		input clk,
+		input clk_en,
+		input [31:0] dataa,
+		input [31:0] datab,
+		
+		output reg led
+);
+
+	always @(posedge clk) begin
+		led <= dataa[0];
+	end
+	
+endmodule
+

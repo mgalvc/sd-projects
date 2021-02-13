@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2018.10.05.16:32:10
+# ACDS 18.1 625 win32 2018.10.27.21:26:40
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2018.10.05.16:32:10
+# ACDS 18.1 625 win32 2018.10.27.21:26:40
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="nios"
@@ -129,6 +129,19 @@ fi
 
 # ----------------------------------------
 # copy RAM/ROM files to simulation directory
+if [ $SKIP_FILE_COPY -eq 0 ]; then
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_ociram_default_contents.dat ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_ociram_default_contents.hex ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_ociram_default_contents.mif ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_a.dat ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_a.hex ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_a.mif ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_b.dat ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_b.hex ./
+  cp -f $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_rf_ram_b.mif ./
+  cp -f $QSYS_SIMDIR/submodules/nios_memory.hex ./
+  cp -f $QSYS_SIMDIR/submodules/nios_descriptor_memory.hex ./
+fi
 
 vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v \
@@ -137,6 +150,60 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v \
   $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv \
+  $QSYS_SIMDIR/submodules/nios_avalon_st_adapter_timing_adapter_0.sv \
+  $QSYS_SIMDIR/submodules/nios_avalon_st_adapter_timing_adapter_0_fifo.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_avalon_st_adapter.v \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_mux_002.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_mux_001.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_mux.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_demux_012.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_demux_011.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_rsp_demux.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_mux_012.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_mux_011.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_mux_001.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_mux.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_demux_002.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_demux_001.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_cmd_demux.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_020.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_019.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_009.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_008.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_004.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_002.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router_001.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0_router.sv \
+  $QSYS_SIMDIR/submodules/altera_avalon_sc_fifo.v \
+  $QSYS_SIMDIR/submodules/altera_merlin_slave_agent.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv \
+  $QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv \
+  $QSYS_SIMDIR/submodules/altera_std_synchronizer_nocut.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_debug_slave_sysclk.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_debug_slave_tck.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_debug_slave_wrapper.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0_cpu_test_bench.v \
+  $QSYS_SIMDIR/submodules/altera_reset_controller.v \
+  $QSYS_SIMDIR/submodules/altera_reset_synchronizer.v \
+  $QSYS_SIMDIR/submodules/nios_avalon_st_adapter.v \
+  $QSYS_SIMDIR/submodules/nios_irq_mapper.sv \
+  $QSYS_SIMDIR/submodules/nios_mm_interconnect_0.v \
+  $QSYS_SIMDIR/submodules/nios_tse.v \
+  $QSYS_SIMDIR/submodules/nios_sgdma_tx.v \
+  $QSYS_SIMDIR/submodules/nios_sgdma_rx.v \
+  $QSYS_SIMDIR/submodules/nios_nios2_qsys_0.v \
+  $QSYS_SIMDIR/submodules/nios_memory.v \
+  $QSYS_SIMDIR/submodules/nios_leds.v \
+  $QSYS_SIMDIR/submodules/nios_jtag.v \
+  $QSYS_SIMDIR/submodules/nios_descriptor_memory.v \
+  $QSYS_SIMDIR/submodules/nios_buttons.v \
+  $QSYS_SIMDIR/submodules/nios_LCD_EN.v \
+  $QSYS_SIMDIR/submodules/nios_LCD_DATA.v \
   $QSYS_SIMDIR/nios.v \
   -top $TOP_LEVEL_NAME
 # ----------------------------------------

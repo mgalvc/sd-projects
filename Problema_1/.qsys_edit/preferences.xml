@@ -16,6 +16,5 @@
   </columns>
  </clocktable>
  <window width="1366" height="728" x="0" y="0" />
- <library
-   expandedCategories="Project,Library/Interface Protocols,Library,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols/PCI Express,Library/Interface Protocols/PCI Express/QSYS Example Designs,Library/Processors and Peripherals" />
+ <library expandedCategories="Project,Library" />
 </preferences>

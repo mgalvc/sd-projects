@@ -1,5 +1,5 @@
 Flow report for Problem_1
-Mon Oct 15 17:51:15 2018
+Mon Feb 11 10:45:40 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 15 17:51:05 2018       ;
+; Flow Status                        ; Flow Failed - Mon Feb 11 10:45:40 2019      ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Problem_1                                   ;
-; Top-level Entity Name              ; nios                                        ;
+; Top-level Entity Name              ; uart                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,722 / 6,272 ( 27 % )                      ;
-;     Total combinational functions  ; 1,603 / 6,272 ( 26 % )                      ;
-;     Dedicated logic registers      ; 932 / 6,272 ( 15 % )                        ;
-; Total registers                    ; 932                                         ;
-; Total pins                         ; 22 / 92 ( 24 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 76,800 / 276,480 ( 28 % )                   ;
-; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/15/2018 17:48:53 ;
+; Start date & time ; 02/11/2019 10:45:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Problem_1           ;
 +-------------------+---------------------+
@@ -75,27 +75,29 @@ refer to the applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 237841979192894.153963653204044                        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 237841979192894.154989271704544                        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; nios/synthesis/../nios.cmp                             ; --            ; --          ; --         ;
 ; MISC_FILE                           ; nios/synthesis/../../nios.qsys                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; my_pll.ppf                                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; my_ddio_out.ppf                                        ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                             ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                             ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                 ; --            ; nios        ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                 ; --            ; nios        ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                 ; --            ; nios        ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                 ; --            ; uart        ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                 ; --            ; uart        ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                 ; --            ; uart        ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                           ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios/synthesis/nios.regmap                             ; --            ; --          ; --         ;
 ; SLD_FILE                            ; nios/synthesis/nios.debuginfo                          ; --            ; --          ; --         ;
-; SLD_INFO                            ; QSYS_NAME nios HAS_SOPCINFO 1 GENERATION_ID 1539636448 ; --            ; nios        ; --         ;
+; SLD_INFO                            ; QSYS_NAME nios HAS_SOPCINFO 1 GENERATION_ID 1549813954 ; --            ; nios        ; --         ;
 ; SOPCINFO_FILE                       ; nios/synthesis/../../nios.sopcinfo                     ; --            ; --          ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; nios                                                   ; Problem_1     ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; uart                                                   ; Problem_1     ; --          ; --         ;
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+------------+
 
 
@@ -104,11 +106,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:26     ; 1.0                     ; 4917 MB             ; 00:02:01                           ;
-; Fitter               ; 00:00:29     ; 1.0                     ; 5271 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 4773 MB             ; 00:00:05                           ;
-; Total                ; 00:02:06     ; --                      ; --                  ; 00:02:27                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4741 MB             ; 00:00:52                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:52                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,9 +117,6 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-V3I5LCL  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-V3I5LCL  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-V3I5LCL  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-V3I5LCL  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -128,9 +124,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Problem_1 -c Problem_1
-quartus_fit --read_settings_files=off --write_settings_files=off Problem_1 -c Problem_1
-quartus_asm --read_settings_files=off --write_settings_files=off Problem_1 -c Problem_1
-quartus_sta Problem_1 -c Problem_1
 
 
 

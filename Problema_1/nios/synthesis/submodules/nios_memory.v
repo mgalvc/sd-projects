@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -40,7 +40,7 @@ module nios_memory (
 
 
   output  [ 31: 0] readdata;
-  input   [ 10: 0] address;
+  input   [ 11: 0] address;
   input   [  3: 0] byteenable;
   input            chipselect;
   input            clk;
@@ -71,8 +71,8 @@ wire             wren;
   defparam the_altsyncram.byte_size = 8,
            the_altsyncram.init_file = INIT_FILE,
            the_altsyncram.lpm_type = "altsyncram",
-           the_altsyncram.maximum_depth = 2048,
-           the_altsyncram.numwords_a = 2048,
+           the_altsyncram.maximum_depth = 4096,
+           the_altsyncram.numwords_a = 4096,
            the_altsyncram.operation_mode = "SINGLE_PORT",
            the_altsyncram.outdata_reg_a = "UNREGISTERED",
            the_altsyncram.ram_block_type = "AUTO",
@@ -80,7 +80,7 @@ wire             wren;
            the_altsyncram.read_during_write_mode_port_a = "DONT_CARE",
            the_altsyncram.width_a = 32,
            the_altsyncram.width_byteena_a = 4,
-           the_altsyncram.widthad_a = 11;
+           the_altsyncram.widthad_a = 12;
 
   //s1, which is an e_avalon_slave
   //s2, which is an e_avalon_slave
